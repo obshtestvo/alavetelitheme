@@ -3,8 +3,15 @@
 <div id="list-filter">
   <%= form_tag(request.path, :method => "get", :id=>"filter_requests_form") do %>
  <div class="list-filter-item">
-  <%= label_tag(:query, _("Keywords"), :class=>"form_label title") %>
-  <%= text_field_tag(:query, params[:query]) %> 
+  <h3 class="title">
+
+   <%= _("Keywords") %>
+    <% content_for :header_title do %>
+      <%= _("Keywords") %>
+      <% end %>
+  </h3>
+  <hr/>
+  <%= text_field_tag(:query, params[:query]) %>
  </div>
 <% if false # don't think we want this, but leaving as an example %>
  <div class="list-filter-item">
