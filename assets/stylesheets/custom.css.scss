@@ -152,8 +152,21 @@ div.form_button input[name = commit] {
   font-weight: bold;
   font-family: 'Open Sans', sans-serif;
   font-size: 15px;
-  padding: 5px 25px;
+  padding: 5px 36px;
   border-radius: 5px;
+  position: relative;
+  bottom: -76px;
+}
+
+.note-box {
+  border: 1px solid;
+  border-radius: 5px;
+  position: relative;
+  top: 146px;
+  margin: 21px;
+  padding: 5px;
+  background-color: #fff;
+  border-color: #ccc;
 }
 
 #request_form label,label.form_label,span#to_public_body {
@@ -243,27 +256,29 @@ border-width:1px;
   display: inline-block;
   vertical-align: top;
   width: 248px;
-  height: 980px;
+  height: 925px;
   font-family: 'Open Sans';
   background: #F6F8F8;
   padding-top: 21px;
   border-right: 1px solid;
   border-right-color: #ccc;
   font-size: 17px;
-
-
 }
 
 a.first-line {
-  padding-right: 67px;
-  padding-left: 17px;
+  padding: 5px;
   padding-bottom: 7px;
+  padding-left: 7px;
   background: #fff url('requests/check-icon.png');
   background-repeat: no-repeat;
   background-position: 200px 4px;
+  display: inline-block;
+  position: relative;
+  width: 95%;
 }
 
 a.second-line {
+  display: inline-block;
   text-decoration: none;
   color: #3E3E3E;
   font-family: 'Open Sans';
@@ -278,13 +293,18 @@ a.second-line {
   border-color: #ccc;
   border-right-color: #F6F8F8;
   padding: 7px;
-  padding-right: 48px;
-  padding-left: 16px;
+  padding-left: 6px;
+  width: 94%;
+  position: relative;
+  top: 14px;
 
 }
 
 a.third-line {
-  padding-left: 20px;
+  display: inline-block;
+  position: relative;
+  padding-left: 7px;
+  top: 23px;
 }
 
 .left-list {
@@ -327,6 +347,8 @@ a.third-line {
   width: 180px;
   height: 188px;
   font-size: 12px;
+  position: relative;
+  bottom: 390px;
 }
 
 .hint-triangle {
@@ -792,6 +814,13 @@ background:image-url('quote-marks.png') no-repeat;
 
 .form_item_note, .form_note {
   margin-left: 0px;
+}
+
+.form_note#left {
+  width: 195px;
+  margin: 0px;
+  font-size: 15px;
+
 }
 
 //@import 'sprites';
