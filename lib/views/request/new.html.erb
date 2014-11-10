@@ -1,4 +1,9 @@
-
+<% content_for :header_title do %>
+  <h1>Make Request</h1>
+  <h3 class="authority-text">
+    <%= h(@info_request.public_body.name) %>
+  </h3>
+<% end %>
 <% unless @batch %>
   <script type="text/javascript">
       $(document).ready(function(){

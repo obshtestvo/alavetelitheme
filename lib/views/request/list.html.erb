@@ -1,7 +1,4 @@
-<div class="header">
-  <h1><%=@title%></h1>
-</div>
-
+<% content_for :header_title, 'Request list' %>
 <div id="header_left">
   <%= render :partial => 'request/request_filter_form' %>
 </div>

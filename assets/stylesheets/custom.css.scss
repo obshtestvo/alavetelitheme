@@ -51,7 +51,22 @@ form input.use-datepicker[type=text] {
   background-repeat:no-repeat;
   background-position:center top;
   background-color:#F0F0F0;
-  background:image-url('stripes.png');
+  height: inherit;
+  color: #3d3d3d;
+  h1 {
+    color: #3d3d3d;
+  }
+}
+
+#banner_inner {
+  padding: 10px 20px;
+  position: static;
+
+  .lang {
+    float: right;
+    position: static;
+    z-index: auto;
+  }
 }
 
 form input[type=text], form input[type=password] {
@@ -748,7 +763,9 @@ background:image-url('quote-marks.png') no-repeat;
       color: #fff;
     }
 
-    li:after {
+    @mixin user-menu-sprite {
+      background-image: url("sprite.png");
+      background-repeat: no-repeat;
       position: absolute;
       top: 10px;
       right: 15px;
@@ -756,12 +773,11 @@ background:image-url('quote-marks.png') no-repeat;
       width: 18px;
       height: 19px;
       content: "";
-      background: image-url("sprite.png") no-repeat 0 -38px;
     }
 
-    li.icon-dahsboard:after { background-position: -42px -38px; }
-    li.icon-settings:after  { background-position: -21px -38px; }
-    li.icon-logout:after  { background-position: 0 -38px; }
+    li.icon-dahsboard:after { @include user-menu-sprite; background-position: -42px -38px; }
+    li.icon-settings:after  { @include user-menu-sprite; background-position: -21px -38px; }
+    li.icon-logout:after  {   @include user-menu-sprite; background-position: 0 -38px; }
 
     li a {
       display: block;
@@ -830,6 +846,10 @@ background:image-url('quote-marks.png') no-repeat;
   margin: 0px;
   font-size: 15px;
 
+}
+
+.left-menu .form_note {
+  width: inherit;
 }
 
 //@import 'sprites';
