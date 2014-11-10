@@ -416,14 +416,19 @@ color:#6B3C6A;
 
 
 div.correspondence,div.comment_in_request {
-background:image-url('stripes-70.png');
+background: none;
+  border: none;
 }
 
 div.outgoing.correspondence {
 background: white;
   border-color: #ccc;
+
 }
 
+#outgoing-0 {
+  margin-left: 249px;
+}
 #frontpage_splash {
 background:image-url('flying-computer.png') no-repeat 175px bottom;
 }
@@ -536,6 +541,15 @@ color:#6B3C7F;
 
 div.correspondence p.preview_subject strong {
 color:#6B3C7F;
+}
+
+#preview_form ul, h1 {
+  margin-left: 249px;
+  color: #4F4F4F;
+}
+
+#preview_form li {
+  list-style-type: none;
 }
 
 div.correspondence h2 {

@@ -5,6 +5,7 @@
     <li><a href = "#" class="<%= if step == 2; then 'current' end%> <%= if step > 2; then 'completed' end%>"><%= _('2. Ask for Information') %> </a> </li>
     <li><a href = "#" class="<%= if step == 3; then 'current' end%>"><%= _('3. Now check your request') %> </a> </li>
   </ol>
+  <% if step == 2 %>
   <div class="note-box">
     <% if !@user %>
         <p class="form_note">
@@ -23,4 +24,5 @@
         </p>
     <% end %>
   </div>
+  <% end %>
 </div>
