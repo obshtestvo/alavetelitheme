@@ -190,9 +190,13 @@ color:#444;
   color:#6B3C6A;
 }
 
-#request_form label#your-adress {
+#request_form label {
   display: block;
   width: 100%;
+}
+
+label#your-address {
+  margin-bottom: 5px;
 }
 
 div#request_form .form_label {
