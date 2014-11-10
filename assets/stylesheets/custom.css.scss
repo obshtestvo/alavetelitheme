@@ -404,7 +404,8 @@ background:image-url('stripes-70.png');
 }
 
 div.outgoing.correspondence {
-background:image-url('stripes-70-light.png');
+background: white;
+  border-color: #ccc;
 }
 
 #frontpage_splash {
@@ -519,6 +520,15 @@ color:#6B3C7F;
 
 div.correspondence p.preview_subject strong {
 color:#6B3C7F;
+}
+
+div.correspondence h2 {
+  text-align: left;
+  font-size: 1em;
+}
+div.correspondence time {
+  text-align: right;
+  font-size: 1em;
 }
 
 div.controller_help h1 a,#logged_in_bar a,#logged_in_bar a:visited,#stepwise_make_request strong {
@@ -809,7 +819,6 @@ background:image-url('quote-marks.png') no-repeat;
 }
 
 .form_button {
-  margin: 0px;
 }
 
 .form_item_note, .form_note {
@@ -845,4 +854,64 @@ background:image-url('quote-marks.png') no-repeat;
   border: 1px solid #ccc;
   margin: 0 0 -1px;
   padding: 12px 80px 6px;
+}
+
+#follow_box h2 {
+  background-color: #4A9D65;
+  padding: 11px;
+  color: white;
+  font-size: 24px;
+}
+
+div#after_actions {
+  display: inline-block;
+  position: relative;
+  width: 38%;
+  float: left;
+}
+
+div#after_actions h2 {
+  margin: 0px;
+  background-color: #FFB66F;
+  color: white;
+  padding: 13px;
+  border: #FFB66F 1px solid;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  font-family: 'OpenSansSemibold', sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+
+}
+div#after_actions ul {
+  list-style-type: none;
+  font-color: #5D5D5D;
+  padding: 0px;
+}
+
+div#after_actions a {
+  list-style-type: none;
+  text-decoration: none;
+  color: #5D5D5D;
+
+}
+
+#annotation, #download-zip, #report {
+  background-color: #FFEFDF;
+  border: #FFEFDF 1px solid;
+  margin-top: -15px;
+  font-family: 'OpenSansSemibold', sans-serif;
+  font-weight: bold;
+  font-size: 13px;
+  color: #5D5D5D;
+  padding: 10px;
+  text-align: center;
+}
+
+#download-zip, #report {
+  margin-top: 2px;
+}
+
+#report {
+  margin-bottom: 40px;
 }
