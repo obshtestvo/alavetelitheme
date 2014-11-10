@@ -51,6 +51,8 @@
     <!--<div class="page-title">-->
       <!--<h1>Make a request</h1>-->
     <!--</div>-->
+
+    <div style="position:relative;">
     <%= render :partial => 'left_menu', :locals => {:step => 2} %>
     <div class="right-make-request">
       <h1 class="page-title"><%= _('2. Ask for Information') %></h1>
@@ -158,20 +160,13 @@
                 </ul>
                 </div>
             <p>
-            <label class="form_label" id= "your-adress" for="typeahead_search"><%= _('Your address:') %></label>
+            <label class="form_label" id= "your-address"><%= _('Your address:') %></label>
             <%= o.text_field :address,
                               :size => 50,
                              :id =>"typeahead_search",
                              :value => @user.address if @user %>
-        </p>
-        <% end %>
-
-        <div id="request_header_subject">
-            <p>
-
             </p>
-        </div>
-
+        <% end %>
         <p class="form_note">
             <%= raw(_("<strong> Can I request information about myself?</strong>\n" +
             "\t\t\t<a href=\"{{url}}\">No! (Click here for details)</a>", :url => (help_requesting_path+"#data_protection").html_safe)) %>
@@ -188,6 +183,7 @@
             <%= hidden_field_tag(:submitted_new_request, 1 ) %>
             <%= hidden_field_tag(:preview, 1 ) %>
             <%= submit_tag _("Preview your public request") %>
+            <br><br>
         </div>
 
         <% if !@info_request.tag_string.empty? %>
@@ -201,8 +197,9 @@
         <% end %>
 
     </div>
-    </div>
 
+    </div>
+    </div>
 <% end %>
 <% if @batch %>
   <%= javascript_include_tag 'new-request.js' %>

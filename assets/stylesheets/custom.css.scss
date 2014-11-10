@@ -161,7 +161,7 @@ color:#444;
   color:#6B3C6A;
 }
 
-div.form_button input[name = commit] {
+.form_button input[name = commit] {
   height: 46px;
   background-image: none;
   background-color: #BABABA;
@@ -173,8 +173,6 @@ div.form_button input[name = commit] {
   font-size: 15px;
   padding: 5px 36px;
   border-radius: 5px;
-  position: relative;
-  bottom: -76px;
 }
 
 .note-box {
@@ -259,7 +257,7 @@ border-width:1px;
 
 #request_form label,label.form_label {
   font-family:'Open Sans', Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 600;
   color: #4F4F4F;
   font-size: 16px;
 }
@@ -273,16 +271,19 @@ border-width:1px;
 }
 
 .left-menu {
-  display: inline-block;
   vertical-align: top;
   width: 248px;
-  height: 925px;
   font-family: 'Open Sans', sans-serif;
   background: #F6F8F8;
   padding-top: 21px;
   border-right: 1px solid;
   border-right-color: #ccc;
   font-size: 17px;
+
+  float: left;
+  position: absolute;
+  top: 0;
+  bottom: 0;
 }
 
 #request_new .left-list {
@@ -341,6 +342,7 @@ border-width:1px;
   width: 65%;
   padding-left: 40px;
   padding-top: 14px;
+  margin-left: 248px;
 }
 
 #request_advice ul {
@@ -580,6 +582,10 @@ background:image-url('quote-marks.png') no-repeat;
     font-family: Tahoma;
     font-size: 14px;
   }
+  .address-field {
+    margin-top: 10px;
+  }
+
 
   .submit {
     position: relative;
@@ -834,10 +840,11 @@ background:image-url('quote-marks.png') no-repeat;
 
 .form_item_note, .form_note {
   margin-left: 0px;
+  display: inline-block;
 }
 
 .form_note#left {
-  width: 195px;
+  width: 100%;
   margin: 0px;
   font-size: 15px;
 
@@ -893,8 +900,8 @@ div#after_actions h2 {
   border: #FFB66F 1px solid;
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
-  font-family: 'OpenSansSemibold', sans-serif;
-  font-weight: bold;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
   font-size: 16px;
 
 }
@@ -915,8 +922,8 @@ div#after_actions a {
   background-color: #FFEFDF;
   border: #FFEFDF 1px solid;
   margin-top: -15px;
-  font-family: 'OpenSansSemibold', sans-serif;
-  font-weight: bold;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
   font-size: 13px;
   color: #5D5D5D;
   padding: 10px;
