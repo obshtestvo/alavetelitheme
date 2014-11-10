@@ -2,12 +2,16 @@
 @import 'font-roboto';
 @import 'modules/navigation';
 @import 'modules/search';
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,700,300&subset=cyrillic,latin);
 
 
 body {
 color:#444;
-font-family:Arial, sans-serif;
+font-family: 'Open Sans', sans-serif;
 text-align:left;
+}
+.nav-main {
+  padding: 0;
 }
 
 #wrapper {
@@ -210,7 +214,7 @@ label.form_label {
   border-color: #d1233e;
   margin-top: 10px;
   border-radius: 5px;
-  font-family: 'OpenSans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 15px;
   padding: 15px;
   color: #4F4F4F
@@ -253,7 +257,7 @@ border-width:1px;
 }
 
 #request_form label,label.form_label {
-  font-family:'OpenSans', Arial, sans-serif;
+  font-family:'Open Sans', Arial, sans-serif;
   font-weight: bold;
   color: #4F4F4F;
   font-size: 16px;
@@ -272,7 +276,7 @@ border-width:1px;
   vertical-align: top;
   width: 248px;
   height: 925px;
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', sans-serif;
   background: #F6F8F8;
   padding-top: 21px;
   border-right: 1px solid;
@@ -296,7 +300,7 @@ a.second-line {
   display: inline-block;
   text-decoration: none;
   color: #3E3E3E;
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', sans-serif;
   font-weight: bold;
   background: #FBFCFC;
   border-top: 1px solid;
@@ -329,7 +333,7 @@ a.third-line {
   a:not(.second-line) {
     text-decoration: none;
     color: #666;
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;
     font-weight: bold;
   }
 }
@@ -856,7 +860,7 @@ background:image-url('quote-marks.png') no-repeat;
 @import 'requests_listing';
 
 .request_listing span.head a, .user_listing span.head a, .body_listing span.head a {
-  font-family: 'OpenSansSemibold', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: bold;
   color: #e7604a;
 }
@@ -865,7 +869,7 @@ background:image-url('quote-marks.png') no-repeat;
   a {
     color: #e7604a;
     text-decoration: initial;
-    font-family: OpenSansSemibold, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 700;
   }
 }
