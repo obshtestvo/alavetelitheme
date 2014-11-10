@@ -51,32 +51,7 @@
     <!--<div class="page-title">-->
       <!--<h1>Make a request</h1>-->
     <!--</div>-->
-    <div class="left-menu" >
-      <span class="title-left-menu"><%= _('Make a request') %> </span>
-      <ol class='left-list'>
-        <li><a href = "#" class="first-line"><%= _('1. Select an authority') %> </a> </li>
-        <li><a href = "#" class="second-line"><%= _('2. Ask for Information') %> </a> </li>
-        <li><a href = "#" class="third-line"><%= _('3. Now check your request') %> </a> </li>
-      </ol>
-      <div class="note-box">
-        <% if !@user %>
-            <p class="form_note">
-
-              <%= raw(_('Everything that you enter on this page, including <strong>your name</strong>,
-                will be <strong>displayed publicly</strong> on
-                this website forever (<a href="{{url}}">why?</a>).', :url => (help_privacy_path+"#public_request").html_safe)) %>
-              <%= raw(_('If you are thinking of using a pseudonym,
-                please <a href="{{url}}">read this first</a>.', :url => (help_privacy_path+"#real_name").html_safe)) %>
-            </p>
-        <% else %>
-            <p class="form_note" id="left">
-              <%= raw(_('Everything that you enter on this page
-                will be <strong>displayed publicly</strong> on
-                this website forever (<a href="{{url}}">why?</a>).', :url => (help_privacy_path+"#public_request").html_safe)) %>
-            </p>
-        <% end %>
-      </div>
-      </div>
+    <%= render :partial => 'left_menu', :locals => {:step => 2} %>
     <div class="right-make-request">
       <h1 class="page-title"><%= _('2. Ask for Information') %></h1>
       <div id="request_header">
