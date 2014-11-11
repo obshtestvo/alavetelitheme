@@ -14,6 +14,15 @@ text-align:left;
   padding: 0;
 }
 
+.site-header .nav-main a {
+  padding: 31px 2px;
+
+  &.selected {
+    background-color: #F0F0F0;
+  }
+}
+
+
 #wrapper {
 
   #content {
@@ -654,7 +663,7 @@ background:image-url('quote-marks.png') no-repeat;
 
 .sign-in {
   margin: 16px 0 0 0;
-  padding: 16px 8px;
+  padding: 16px 3px;
   display: inline-block;
   text-decoration: none;
   border-radius: 5px;
