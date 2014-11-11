@@ -15,7 +15,7 @@ text-align:left;
 }
 
 .site-header .nav-main a {
-  padding: 31px 2px;
+  padding: 31px 6px;
 
   &.selected {
     background-color: #F0F0F0;
@@ -73,10 +73,9 @@ form input.use-datepicker[type=text] {
 
 #banner_inner {
   padding: 10px 20px;
-  position: static;
 
   .lang {
-    float: right;
+    top: inherit;
     position: static;
     z-index: auto;
   }
@@ -347,8 +346,10 @@ border-width:1px;
   font-weight: bold;
   font-size: 10pt;
   padding-left: 42px;
-  text-decoration: none
+  text-decoration: none;
+  text-transform: uppercase;
 }
+
 .right-make-request {
   display: inline-block;
   width: 65%;
@@ -890,6 +891,7 @@ background:image-url('quote-marks.png') no-repeat;
 .form_item_note, .form_note {
   margin-left: 0px;
   display: inline-block;
+  font-size: 10pt;
 }
 
 .form_note#left {
