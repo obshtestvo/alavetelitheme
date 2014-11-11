@@ -421,13 +421,11 @@ background: none;
 }
 
 div.outgoing.correspondence {
-background: white;
+  background: white;
   border-color: #ccc;
-
 }
-
-#outgoing-0 {
-  margin-left: 249px;
+div.preview-request {
+  margin-left: 300px;
 }
 #frontpage_splash {
 background:image-url('flying-computer.png') no-repeat 175px bottom;
@@ -543,9 +541,8 @@ div.correspondence p.preview_subject strong {
 color:#6B3C7F;
 }
 
-#preview_form ul, h1 {
-  margin-left: 249px;
-  color: #4F4F4F;
+#preview_form ul {
+  border-bottom: 1px solid;
 }
 
 #preview_form li {
