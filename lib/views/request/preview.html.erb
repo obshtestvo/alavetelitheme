@@ -7,44 +7,41 @@
 
     <%= render :partial => 'left_menu', :locals => {:step => 3} %>
 
-    <h1><%= _('3. Now check your request') %></h1>
-    <ul>
-    <li><%= _('Check you haven\'t included any <strong>personal information</strong>.') %></li>
-    <li><%= raw(_('Your name, request and any responses will appear in <strong>search engines</strong>
-        (<a href="{{url}}">details</a>).', :url => (help_privacy_path+"#public_request").html_safe)) %>
-    </li>
-    </ul>
+     <div class="preview-request">
+        <h1><%= _('3. Now check your request') %></h1>
+        <ul>
+            <li><%= _('Check you haven\'t included any <strong>personal information</strong>.') %></li>
+            <li><%= raw(_('Your name, request and any responses will appear in <strong>search engines</strong>
+            (<a href="{{url}}">details</a>).', :url => (help_privacy_path+"#public_request").html_safe)) %>
+            </li>
+        </ul>
+       <div class="correspondence" id="outgoing-0">
+      <%= fields_for :outgoing_message do |o| %>
+          <p class="preview_subject">
+            <strong><%= _('To:') %></strong>
+            <% if @batch %>
+                <%= _("Your selected authorities")%>
+            <% else %>
+                <%=h(@info_request.public_body.name)%>
+            <% end %>
+            <br><strong><%= _('Subject:') %></strong> <%=h @info_request.email_subject_request %>
 
-    <%= fields_for :outgoing_message do |o| %>
+            <strong><%= _("Address:") %></strong> <%= @outgoing_message.address %>
+            <%= o.hidden_field(:address) %>
+          </p>
 
-        <div class="correspondence" id="outgoing-0">
-            <p class="preview_subject">
-                <strong><%= _('To:') %></strong>
-                <% if @batch %>
-                  <%= _("Your selected authorities")%>
-                <% else %>
-                  <%=h(@info_request.public_body.name)%>
-                <% end %>
-                <br><strong><%= _('Subject:') %></strong> <%=h @info_request.email_subject_request %>
-
-                <strong><%= _("Address:") %></strong> <%= @outgoing_message.address %>
-                <%= o.hidden_field(:address) %>
-            </p>
-
-            <div class="correspondence_text">
-                <p><%= @outgoing_message.get_body_for_html_display %></p>
-                <%= o.hidden_field(:body) %>
-            </div>
+          <div class="correspondence_text">
+            <p><%= @outgoing_message.get_body_for_html_display %></p>
+            <%= o.hidden_field(:body) %>
 
             <p class="event_actions">
-            </p>
-        </div>
-    <% end %>
 
-    <p><%= _('<strong>Privacy note:</strong> If you want to request private information about
+            <p><%= _('<strong>Privacy note:</strong> If you want to request private information about
     yourself then <a href="{{url}}">click here</a>.', :url => (help_requesting_path+"#data_protection").html_safe) %>
-
-    <p>
+          </div>
+          </div>
+    </div>
+    <% end %>
     <%= f.hidden_field(:title) %>
     <% if @batch %>
       <% params[:public_body_ids].each do |public_body_id| %>
