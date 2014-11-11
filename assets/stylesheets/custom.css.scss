@@ -277,7 +277,6 @@ border-width:1px;
 
 #request_new.controller_request {
   margin-top: 36px;
-  width: 946px;
   border: 1px solid;
   border-radius: 3px;
   border-color: #ccc;
@@ -435,7 +434,9 @@ div.outgoing.correspondence {
 }
 div.preview-request {
   margin-left: 300px;
+  margin-right: 50px;
 }
+
 #frontpage_splash {
 background:image-url('flying-computer.png') no-repeat 175px bottom;
 }
@@ -550,12 +551,36 @@ div.correspondence p.preview_subject strong {
 color:#6B3C7F;
 }
 
+.preview_subject {
+
+  margin: 0px 0px 0px 0px;
+}
 #preview_form ul {
+  padding-left: 0px;
   border-bottom: 1px solid;
 }
 
 #preview_form li {
   list-style-type: none;
+}
+#preview_form p {
+  color: #4F4F4F;
+}
+
+#preview_form h1 {
+  color: #4F4F4F;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+div.correspondence {
+  border: 1px solid #ccc;
+  margin-top: 10px;
+  padding-right: 0px;
+  background: #F6F8F8;
+  color: #4F4F4F;
+
 }
 
 div.correspondence h2 {
