@@ -86,7 +86,12 @@ form input.use-datepicker[type=text] {
 form input[type=text], form input[type=password] {
   width: inherit;
 }
-
+form input[type=submit] {
+  font-size: 12pt;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
 #topnav {
 font-family:'DeliciousRoman', Arial, sans-serif;
 }
@@ -167,18 +172,22 @@ color:#444;
   color:#6B3C6A;
 }
 
-.form_button input[name = commit] {
+.form_button input[name = commit], input[name = reedit], input[name=submit] {
   height: 46px;
-  background-image: none;
-  background-color: #8cc63f;
   border-color:inherit;
   border-width: 0px;
   text-shadow: none;
   font-weight: 600;
   font-family: 'Open Sans', sans-serif;
-  font-size: 15px;
+  font-size: 12pt;
   padding: 5px 36px;
   border-radius: 5px;
+}
+
+.form_button input[name = reedit], input[name = submit] {
+  padding: 0px 0px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
 }
 
 .note-box {
@@ -224,7 +233,7 @@ label.form_label {
   border-radius: 5px;
   border-width: 1px;
   font-family: 'Open Sans',sans-serif;
-  font-size: 15px;
+  font-size: 12 pt;
   padding: 15px;
   color: #4F4F4F
 }
@@ -409,11 +418,6 @@ div#request_header_text {
 
 #navigation_search input[type=text] {
  border-color:#BE7DBC;
-}
-
-
-form input[type=submit],a.link_button_green,a.link_button_green_large {
-font-family:'DeliciousRoman', Arial, sans-serif;
 }
 
 div.frontpage-box {
@@ -635,7 +639,7 @@ background:image-url('quote-marks.png') no-repeat;
     color: #d1233e;
     border: 0;
     font-family: Tahoma;
-    font-size: 14px;
+    font-size: 11pt;
   }
   .address-field {
     margin-top: 10px;
@@ -904,7 +908,7 @@ background:image-url('quote-marks.png') no-repeat;
 .form_note#left {
   width: 100%;
   margin: 0px;
-  font-size: 15px;
+  font-size: 11pt;
 
 }
 
@@ -960,7 +964,7 @@ div#after_actions h2 {
   border-top-right-radius: 3px;
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 12pt;
 
 }
 div#after_actions ul {
@@ -982,7 +986,7 @@ div#after_actions a {
   margin-top: -15px;
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
-  font-size: 13px;
+  font-size: 9.75pt;
   color: #5D5D5D;
   padding: 10px;
   text-align: center;
