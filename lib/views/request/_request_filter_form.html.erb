@@ -4,11 +4,7 @@
   <%= form_tag(request.path, :method => "get", :id=>"filter_requests_form") do %>
  <div class="list-filter-item">
   <h3 class="title">
-
    <%= _("Keywords") %>
-    <% content_for :header_title do %>
-      <%= _("Keywords") %>
-      <% end %>
   </h3>
   <hr/>
   <%= text_field_tag(:query, params[:query]) %>

@@ -1,4 +1,12 @@
-<% content_for :header_title, 'Request list' %>
+<% content_for :header_title do %>
+  <h1 class="grid-70"><%= @title %></h1>
+  <div class="grid-30">
+    <h2><%= _("Follow these requests") %></h2>
+    <% if @track_thing %>
+      <%= render :partial => 'track/tracking_links', :locals => { :track_thing => @track_thing, :own_request => false, :location => 'main' } %>
+    <% end %>
+  </div>
+<% end %>
 <div id="header_left">
   <%= render :partial => 'request/request_filter_form' %>
 </div>
@@ -10,13 +18,6 @@
       <% end %>
   <% else %>
       <%= render :partial => 'list_results' %>
-  <% end %>
-</div>
-
-<div id="header_right">
-  <h2><%= _("Follow these requests") %></h2>
-  <% if @track_thing %>
-      <%= render :partial => 'track/tracking_links', :locals => { :track_thing => @track_thing, :own_request => false, :location => 'main' } %>
   <% end %>
 </div>
 
