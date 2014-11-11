@@ -166,8 +166,7 @@ font-weight:400;
 }
 
 .request_listing span.desc {
-background:image-url('quote-marks.png') no-repeat;
-color:#444;
+background: initial;
 }
 
 .feed_link a,.act_link a,#header_right > a {
@@ -611,10 +610,6 @@ color:#93278F;
 
 body.front {
 background:image-url('home-grad.png') repeat-x 0 160px;
-}
-
-.request_listing span.desc {
-background:image-url('quote-marks.png') no-repeat;
 }
 
 #frontpage_examples .excerpt {
