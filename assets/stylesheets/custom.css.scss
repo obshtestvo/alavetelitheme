@@ -24,8 +24,10 @@ text-align:left;
 
 
 #wrapper {
+  width: 960px;
 
   #content {
+    width: 100%;
     padding: inherit;
 
     div.header {
@@ -150,10 +152,6 @@ font-family:'DeliciousRoman';
 color:#6B3C7F;
 }
 
-#content {
-  width: 945px;
-}
-
 .request_listing span.head a,.user_listing span.head a,.body_listing span.head a {
 color:#6B3C6A;
 font-family:'DeliciousRoman', Arial, sans-serif;
@@ -172,11 +170,11 @@ color:#444;
 .form_button input[name = commit] {
   height: 46px;
   background-image: none;
-  background-color: #BABABA;
+  background-color: #8cc63f;
   border-color:inherit;
   border-width: 0px;
   text-shadow: none;
-  font-weight: bold;
+  font-weight: 600;
   font-family: 'Open Sans', sans-serif;
   font-size: 15px;
   padding: 5px 36px;
@@ -204,7 +202,7 @@ color:#444;
 }
 
 label#your-address {
-  margin-bottom: 5px;
+  margin-bottom: 15px;
 }
 
 div#request_form .form_label {
@@ -241,7 +239,7 @@ span#to_public_body .authority-text, #typeahead_search {
   font-weight: bold;
   border-width: 1px;
   border-radius: 6px;
-  width: 378px;
+  width: 60%;
 }
 
 span#to_public_body .authority-text[disabled] {
@@ -253,11 +251,10 @@ color:#93278F;
 }
 
 #stepwise_make_request {
-background-color:#d0d0d0;
-background:image-url('stripes.png');
-border:1px solid #DEBEDD;
-font-family:'DeliciousRoman', Arial, sans-serif;
-color:#6B3C6A;
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  color:#6B3C6A;
 }
 
 div.comment_in_request {
@@ -276,9 +273,12 @@ border-width:1px;
 
 #request_new.controller_request {
   margin-top: 36px;
-  border: 1px solid;
-  border-radius: 3px;
-  border-color: #ccc;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+p#left.form_note {
+  font-size: 12px;
+  padding: 5px;
 }
 
 .left-menu {
@@ -287,9 +287,8 @@ border-width:1px;
   font-family: 'Open Sans', sans-serif;
   background: #F6F8F8;
   padding-top: 21px;
-  border-right: 1px solid;
-  border-right-color: #ccc;
-  font-size: 17px;
+  border-right: #ccc 1px solid;
+  border-top: #ccc 1px solid;
 
   float: left;
   position: absolute;
@@ -343,7 +342,7 @@ border-width:1px;
 
 .title-left-menu {
   font-family: 'Open Sans', sans-serif;
-  font-weight: bold;
+  font-weight: 600;
   font-size: 10pt;
   padding-left: 42px;
   text-decoration: none;
@@ -544,21 +543,21 @@ div #request_header_text{
 }
 
 div.correspondence p.preview_subject {
-font-family:'DeliciousRoman';
+font-family:'Open Sans';
 color:#6B3C7F;
 }
 
 div.correspondence p.preview_subject strong {
-color:#6B3C7F;
+  color: #4F4F4F;
+  font-size: 14px;
 }
 
 .preview_subject {
-
   margin: 0px 0px 0px 0px;
 }
 #preview_form ul {
   padding-left: 0px;
-  border-bottom: 1px solid;
+  border-bottom: 1px solid #ccc;
 }
 
 #preview_form li {
@@ -566,6 +565,8 @@ color:#6B3C7F;
 }
 #preview_form p {
   color: #4F4F4F;
+  font-family: 'Open Sans' , sans-serif;
+  font-weight: 400;
 }
 
 #preview_form h1 {
@@ -577,7 +578,7 @@ color:#6B3C7F;
 
 div.correspondence {
   border: 1px solid #ccc;
-  margin-top: 10px;
+  margin-top: 20px;
   padding-right: 0px;
   background: #F6F8F8;
   color: #4F4F4F;
@@ -593,6 +594,9 @@ div.correspondence time {
   font-size: 1em;
 }
 
+.correspondence_text {
+  border-top: 1px solid #ccc;
+}
 div.controller_help h1 a,#logged_in_bar a,#logged_in_bar a:visited,#stepwise_make_request strong {
 color:#93278F;
 }
@@ -835,6 +839,7 @@ background:image-url('quote-marks.png') no-repeat;
       text-transform: uppercase;
       color: #606060;
       text-decoration: none;
+      font-size: 13px;
     }
 
     li a:hover {
@@ -886,6 +891,7 @@ background:image-url('quote-marks.png') no-repeat;
 }
 
 .form_button {
+  margin: 0px;
 }
 
 .form_item_note, .form_note {
