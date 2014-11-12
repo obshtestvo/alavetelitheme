@@ -104,6 +104,7 @@ form input[type=submit] {
   margin-bottom: 20px;
   padding-left: 20px;
   padding-right: 20px;
+  border: none;
 }
 #topnav {
 font-family:'DeliciousRoman', Arial, sans-serif;
@@ -199,6 +200,9 @@ background: initial;
   padding: 0px 0px;
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
+}
+input#reedit_button {
+  margin-right: 30px;
 }
 
 .note-box {
@@ -340,7 +344,7 @@ p#left.form_note {
       border-right: 1px solid #ccc;
       background: #fff url('requests/check-icon.png');
       background-repeat: no-repeat;
-      background-position: 90% 50%;
+      background-position: 98% 50%;
       width: 95%;
     }
 
@@ -579,10 +583,11 @@ div.correspondence p.preview_subject strong {
 #preview_form li {
   list-style-type: none;
 }
-#preview_form p {
+#preview_form p, div.correspondence h2 {
   color: #4F4F4F;
   font-family: 'Open Sans' , sans-serif;
   font-weight: 400;
+  margin-bottom: 10px;
 }
 
 #preview_form h1 {
@@ -592,7 +597,7 @@ div.correspondence p.preview_subject strong {
   font-size: 15pt;
 }
 
-div.correspondence {
+div.correspondence, div.outgoing.correspondence {
   border: 1px solid #ccc;
   margin-top: 20px;
   padding-right: 0px;
@@ -1006,3 +1011,5 @@ div#after_actions a {
 #report {
   margin-bottom: 40px;
 }
+
+
