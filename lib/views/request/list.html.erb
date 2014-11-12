@@ -1,0 +1,25 @@
+<% content_for :header_title do %>
+  <h1 class="grid-70"><%= @title %></h1>
+  <div class="grid-30">
+    <h2><%= _("Follow these requests") %></h2>
+    <% if @track_thing %>
+      <%= render :partial => 'track/tracking_links', :locals => { :track_thing => @track_thing, :own_request => false, :location => 'main' } %>
+    <% end %>
+  </div>
+<% end %>
+<div id="header_left">
+  <%= render :partial => 'request/request_filter_form' %>
+</div>
+
+<div class="results_section">
+  <% if key = request_list_cache_key %>
+      <% cache_if_caching_fragments(key, :expires_in => 5.minutes) do %>
+          <%= render :partial => 'list_results' %>
+      <% end %>
+  <% else %>
+      <%= render :partial => 'list_results' %>
+  <% end %>
+</div>
+
+<div style="clear:both"></div>
+
