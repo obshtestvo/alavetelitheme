@@ -1,5 +1,4 @@
 @import '960gs';
-@import 'font-roboto';
 @import 'modules/navigation';
 @import 'modules/search';
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,700,300&subset=cyrillic,latin);
@@ -16,12 +15,18 @@ text-align:left;
 
 .site-header .nav-main a {
   padding: 31px 6px;
+  font-size: 12pt;
 
   &.selected {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
     background-color: #F0F0F0;
   }
 }
 
+#authority_preview {
+  margin-top: 0;
+}
 
 #wrapper {
   width: 960px;
@@ -73,10 +78,16 @@ form input.use-datepicker[type=text] {
   h1 {
     color: #3d3d3d;
   }
+
+  h2 {
+    color: #3d3d3d;
+  }
 }
 
 #banner_inner {
-  padding: 10px 20px;
+  width: auto;
+  width: auto;
+  position: static;
 
   .lang {
     top: inherit;
@@ -129,8 +140,7 @@ h1,h2,h3 {
 
 h1 {
 color:#93278F;
-font-size:42px;
-font-family:'DeliciousBold', Arial, sans-serif;
+font-size:26pt;
 }
 
 h2 {
