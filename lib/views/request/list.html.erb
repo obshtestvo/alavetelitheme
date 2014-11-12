@@ -1,6 +1,6 @@
 <% content_for :header_title do %>
-  <h1 class="grid-70"><%= @title %></h1>
-  <div class="grid-30">
+  <h1 class="grid-75"><%= @title %></h1>
+  <div class="grid-25">
     <h2><%= _("Follow these requests") %></h2>
     <% if @track_thing %>
       <%= render :partial => 'track/tracking_links', :locals => { :track_thing => @track_thing, :own_request => false, :location => 'main' } %>

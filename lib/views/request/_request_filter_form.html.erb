@@ -1,7 +1,7 @@
 <%= render :partial => 'general/localised_datepicker'  %>
 
+<%= form_tag(request.path, :method => "get", :id=>"filter_requests_form") do %>
 <div id="list-filter">
-  <%= form_tag(request.path, :method => "get", :id=>"filter_requests_form") do %>
  <div class="list-filter-item">
   <h3 class="title">
    <%= _("Keywords") %>
@@ -57,5 +57,5 @@
  <div class="list-filter-item">
   <%= submit_tag(_("Search")) %>
  </div>
-<% end %>
 </div>
+<% end %>
