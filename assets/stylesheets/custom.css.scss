@@ -194,6 +194,7 @@ background: initial;
   font-size: 12pt;
   padding: 5px 36px;
   border-radius: 5px;
+  background-color: #4A9D65;
 }
 
 .form_button input[name = reedit], input[name = submit] {
@@ -201,8 +202,13 @@ background: initial;
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
 }
+
 input#reedit_button {
   margin-right: 30px;
+  background-color: #2E7E87;
+}
+input#reedit_button, input#submit_button {
+  margin-top: 15px;
 }
 
 .note-box {
@@ -531,7 +537,8 @@ color:#FFF;
 }
 
 p.public-body-name-prefix {
-color:#DEB4D8;
+  color:#DEB4D8;
+  margin-bottom: 0px;
 }
 
 #other-country-notice a {
@@ -911,6 +918,10 @@ background:image-url('quote-marks.png') no-repeat;
   margin: 0px;
 }
 
+form input[type=submit], a.link_button_green, a.link_button_green_large {
+  background-image: none;
+  background-color: #4A9D65;
+}
 .form_item_note, .form_note {
   margin-left: 0px;
   display: inline-block;
@@ -962,8 +973,24 @@ background:image-url('quote-marks.png') no-repeat;
 div#after_actions {
   display: inline-block;
   position: relative;
-  width: 38%;
   float: left;
+  width: 99%;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  border: 1px solid #ffefdf;
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
+    li {
+      padding-left: 4px;
+    }
+}
+
+div#after_actions strong {
+  display: block;
+  background-color: #ffefdf;
+  width: 95%;
+  padding: 6px;
+  color: #5D5D5D;
 }
 
 div#after_actions h2 {
@@ -976,20 +1003,23 @@ div#after_actions h2 {
   border-top-right-radius: 3px;
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
-  font-size: 12pt;
+  font-size: 13pt;
 
 }
 div#after_actions ul {
   list-style-type: none;
   font-color: #5D5D5D;
+  font-family: 'Open Sans', sans-serif;
   padding: 0px;
 }
 
 div#after_actions a {
   list-style-type: none;
-  text-decoration: none;
-  color: #5D5D5D;
-
+  text-decoration: underline;
+  color: #d74058;
+  padding: 4px;
+  display: block;
+  width: 100%;
 }
 
 #annotation, #download-zip, #report {
@@ -1012,4 +1042,17 @@ div#after_actions a {
   margin-bottom: 40px;
 }
 
+#frontpage_splash #right_column input[type=text], #header_left form input[type=text]#query {
+  margin-bottom: 10px;
+}
+
+.fieldWithErrors {
+  border: none;
+}
+
+#search_form input[type=submit]{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
 
