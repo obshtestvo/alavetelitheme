@@ -50,7 +50,21 @@ text-align:left;
   }
 }
 
-@media (max-width:960px) {
+#signup, #signin {
+  width: 45%;
+  float: none;
+}
+
+#left_half, #right_half {
+  width: 45%;
+}
+
+#signup .form_item_note, #signin .form_note {
+  font-size: 0.9em;
+  margin-left: 0;
+}
+
+@media (max-width:980px) {
   .site-header .nav-main a.selected {
     border: 0;
     background-color: inherit;
@@ -63,6 +77,12 @@ text-align:left;
       padding: 0 1%;
       width: 98%;
     }
+  }
+}
+
+@media (max-width:780px) {
+  form.form-search {
+    width: 200px;
   }
 }
 
@@ -443,6 +463,7 @@ p#left.form_note {
 
 div.form_item_note {
   margin-left: 0px;
+  width: auto;
 }
 .page-title {
   font-family: 'Open Sans', sans-serif;

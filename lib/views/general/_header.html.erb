@@ -9,7 +9,7 @@
         <%= render 'general/topnav' %>
       </nav>
     </div>
-    <div class="grid-30 mobile-grid-5">
+    <div class="grid-30">
       <%= form_tag search_redirect_path, method: :post, class: 'form-search' do %>
         <%= text_field_tag 'header-query', params[:query], size: 40, title: 'type your search term here' %>
         <span class="submit"><%= submit_tag 'search' %></span>
