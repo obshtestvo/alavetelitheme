@@ -12,6 +12,7 @@
   display: inline-block;
   vertical-align: middle;
   line-height: 1.5em;
+  width: 100%;//override main.css
 }
 
 .results_section {
@@ -91,11 +92,15 @@
     line-height: 200%;
     font-family: 'Open Sans', sans-serif;
     font-size: 12pt;
+
+    &:hover {
+      background-color: #F9F7F9;
+    }
   }
 
   a {
-    color: #3d3d3d;
-    font-size: 10pt;
+    color: #0B288D;
+    font-size: 11pt;
     text-decoration: none;
   }
 }
