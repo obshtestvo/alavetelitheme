@@ -353,8 +353,9 @@ border-width:1px;
   border-color: #ccc;
 }
 p#left.form_note {
+  width: 100%;
   font-size: 12px;
-  padding: 5px;
+  padding: 0%;
 }
 
 .left-menu {
@@ -418,11 +419,14 @@ p#left.form_note {
 }
 
 .title-left-menu {
+  text-align: center;
+  display: inline-block;
+  width: 96%;
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   font-size: 10pt;
-  padding-left: 23%;
-  padding-right: 23%;
+  padding-left: 2%;
+  padding-right: 2%;
   text-decoration: none;
   text-transform: uppercase;
 }
