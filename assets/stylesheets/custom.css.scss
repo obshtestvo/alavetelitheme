@@ -12,7 +12,9 @@ text-align:left;
 .nav-main {
   padding: 0;
 }
-
+#request_form label, label.form_label {
+  padding: 0; //override default value
+}
 .site-header .nav-main a {
   padding: 31px 6px;
   font-size: 14px;
@@ -29,6 +31,12 @@ text-align:left;
 //    padding-top: 20px;
     padding-bottom: 40px;
 
+  }
+}
+
+@media (max-width:980px) {
+  .site-header .nav-main a.selected {
+    color: #fff;
   }
 }
 
@@ -51,8 +59,11 @@ text-align:left;
 }
 
 #signup, #signin {
-  width: 45%;
+  width: 100%;
   float: none;
+}
+#signup .form_item_note, #signin .form_note {
+  width: 95%;
 }
 
 #left_half, #right_half {
@@ -72,6 +83,7 @@ text-align:left;
   }
 
   #wrapper {
+    margin: 0;
     width: 100%;
     #content {
       padding: 0 1%;
@@ -255,7 +267,10 @@ input#reedit_button {
 input#reedit_button, input#submit_button {
   margin-top: 15px;
 }
-
+#sign_together .form_button {
+  margin-left: 0;
+  width: 99%;
+}
 .note-box {
   border: 1px solid;
   border-radius: 5px;
