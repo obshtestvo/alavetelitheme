@@ -728,11 +728,10 @@ background:image-url('quote-marks.png') no-repeat;
 
   > li {
     display: block;
-    width: 67px;
+    width: 55px;
     height: 33px;
     float: left;
     border-left: solid 1px #723364;
-
   }
 
   .btn-flag {
@@ -1044,6 +1043,10 @@ div#after_actions a {
 
 #frontpage_splash #right_column input[type=text], #header_left form input[type=text]#query {
   margin-bottom: 10px;
+}
+
+.most-left-cell {
+  padding-left: 0;
 }
 
 .fieldWithErrors {
