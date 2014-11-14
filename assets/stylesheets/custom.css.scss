@@ -223,10 +223,10 @@ input#reedit_button, input#submit_button {
 .note-box {
   border: 1px solid;
   border-radius: 5px;
-  position: relative;
-  top: 146px;
-  margin: 21px;
-  padding: 5px;
+  margin-top: 14%;
+  margin-left: 9%;
+  margin-right: 9%;
+  padding: 2%;
   background-color: #fff;
   border-color: #ccc;
 }
@@ -339,9 +339,8 @@ p#left.form_note {
 #request_new .left-list {
   list-style-type: none;
   color: #666;
-  padding-left: 21px;
   font-size: 11pt;
-  margin-top: 5px;
+  margin-top: 3%;
   width: 94%;
   padding-left: 6%;
 
@@ -386,7 +385,7 @@ p#left.form_note {
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   font-size: 10pt;
-  padding-left: 42px;
+  padding-left: 23%;
   text-decoration: none;
   text-transform: uppercase;
 }
