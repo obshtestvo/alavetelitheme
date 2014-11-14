@@ -342,6 +342,8 @@ p#left.form_note {
   padding-left: 21px;
   font-size: 11pt;
   margin-top: 5px;
+  width: 94%;
+  padding-left: 6%;
 
   li {
     margin: 2px 0px;
@@ -350,17 +352,18 @@ p#left.form_note {
   a {
     display: inline-block;
     text-decoration: none;
-    padding: 6px 0px 6px 12px;
+    padding: 6px 0 6px 0;
     border-top-left-radius: 6px;
     border-bottom-left-radius: 6px;
     color: #4F4F4F;
+    width: 95%;
+    padding-left: 5%;
 
     &.completed {
-      border-right: 1px solid #ccc;
+      border-right: 0;
       background: #fff url('requests/check-icon.png');
       background-repeat: no-repeat;
       background-position: 98% 50%;
-      width: 95%;
     }
 
     &.current {
@@ -375,7 +378,6 @@ p#left.form_note {
       border-left: 1px solid;
       border-color: #ccc;
       border-right: 1px solid #F6F8F8;
-      width: 94%;
     }
   }
 }
