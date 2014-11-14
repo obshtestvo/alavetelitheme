@@ -50,6 +50,22 @@ text-align:left;
   }
 }
 
+@media (max-width:960px) {
+  .site-header .nav-main a.selected {
+    border: 0;
+    background-color: inherit;
+    padding-bottom: 0;
+  }
+
+  #wrapper {
+    width: 100%;
+    #content {
+      padding: 0 1%;
+      width: 98%;
+    }
+  }
+}
+
 img {
   max-width: 100%;
 }
