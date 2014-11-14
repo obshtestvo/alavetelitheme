@@ -237,7 +237,7 @@ background: initial;
   font-weight: 600;
   font-family: 'Open Sans', sans-serif;
   font-size: 12pt;
-  padding: 5px 36px;
+  padding: 2% 5%;
   border-radius: 5px;
   background-color: #4A9D65;
 }
@@ -273,7 +273,9 @@ input#reedit_button, input#submit_button {
 
 #request_form label {
   display: block;
-  width: 100%;
+  width: 98%;
+  padding-right: 2%;
+
 }
 
 label#your-address {
@@ -292,15 +294,15 @@ label.form_label {
 }
 
 #request_form  #outgoing_message_body {
-  width: 386px;
+  width: 62%;
   height: 300px;
   border-color: #d1233e;
-  margin-top: 10px;
+  margin-top: 1.7%;
   border-radius: 5px;
   border-width: 1px;
   font-family: 'Open Sans',sans-serif;
-  font-size: 12 pt;
-  padding: 15px;
+  font-size: 12pt;
+  padding: 2%;
   color: #4F4F4F
 }
 
@@ -436,25 +438,23 @@ p#left.form_note {
   width: 65%;
   padding-left: 40px;
   padding-top: 14px;
-  margin-left: 248px;
+  margin-left: 26%;
 }
 
 #request_advice ul {
   border: 1px solid #ccc;
   border-radius: 6px;
   list-style: none;
-  padding: 15px;
+  padding: 5%;
+  width: 89%;
 
 
 }
 
 #request_advice {
   display: inline-block;
-  width: 180px;
-  height: 188px;
+  width: 29%;
   font-size: 12px;
-  position: relative;
-  bottom: 390px;
 }
 
 .hint-triangle {
@@ -475,10 +475,15 @@ div.form_item_note {
   font-weight:600;
   color: #4F4F4F;
   font-size: 23px;
+  width: 100%;
 }
 
   #request_header {
     background-color: white;
+  }
+
+  #request_header_subject {
+    width: 100%;
   }
 
 div#request_header {
@@ -977,6 +982,7 @@ form input[type=submit], a.link_button_green, a.link_button_green_large {
 .form_item_note, .form_note {
   margin-left: 0px;
   display: inline-block;
+  width: 100%;
   font-size: 10pt;
 }
 
