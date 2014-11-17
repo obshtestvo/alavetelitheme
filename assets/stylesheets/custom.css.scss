@@ -111,6 +111,7 @@ img {
 form input[type=text], form input[type=password] {
   height: 26px;
   margin-bottom: 10px;
+  width: 80%;
 }
 form input.use-datepicker[type=text] {
   height: 26px;
@@ -470,6 +471,8 @@ p#left.form_note {
   display: inline-block;
   width: 29%;
   font-size: 12px;
+  bottom: inherit;
+  position: static;
 }
 
 .hint-triangle {
