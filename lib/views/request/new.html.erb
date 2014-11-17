@@ -150,7 +150,6 @@
         <p>
             <label class="form_label" for="outgoing_message_body"><%= _('Your request:') %></label>
             <%= o.text_area :body, :rows => 20, :cols => 60 %>
-        </p>
               <div id="request_advice">
                 <%= image_tag 'requests/triangle-icon.png', class: 'hint-triangle'%>
                 <ul>
@@ -158,7 +157,8 @@
                   <li><%= _('Ask for <strong>specific</strong> documents or information, this site is not suitable for general enquiries.')%>
                   <li><%= _("Keep it <strong>focused</strong>, you'll be more likely to get what you want (<a href=\"{{url}}\">why?</a>).", :url => (help_requesting_path + '#focused').html_safe) %></li>
                 </ul>
-                </div>
+              </div>
+        </p>
             <p>
             <label class="form_label" id= "your-address"><%= _('Your address:') %></label>
             <%= o.text_field :address,
