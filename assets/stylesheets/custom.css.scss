@@ -1140,3 +1140,36 @@ div#after_actions a {
   font-size: 10pt;
 }
 
+
+.act-title {
+  color: white;
+  background-color: #9f5a7f;
+  font-size: 13pt;
+}
+
+.act_link {
+  background-color: #f2e5ec;
+  width: 85%;
+  color: #545255;
+  margin-bottom: 7%;
+  margin-top: 4%;
+  padding: 7%;
+  margin-top: 1%;
+  margin-bottom: 0%;
+
+  //  display: inherit;
+
+}
+.act-title, .act_link a {
+
+  padding: 3%;
+  width: 93%;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  border-radius: 3px;
+  margin: 0px;
+}
+
+#notice, .describe_state_form, #other_recipients, #error, #hidden_request {
+  width: 100%;
+}
