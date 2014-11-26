@@ -96,6 +96,33 @@ body {
     background-color: inherit;
     padding-bottom: 0;
   }
+@media (max-width: 960px) {
+  .footer {
+    min-height: 184px;
+  }
+}
+@media (max-width: 768px) {
+  .footer {
+    min-height: 218px;
+  }
+}
+  @media (max-width: 657px) {
+    .footer {
+      min-height: 246px;
+    }
+  }@media (max-width: 500px) {
+  .footer {
+    min-height: 250px;
+  }
+}
+  @media (max-width: 442px) {
+    .footer {
+    min-height: 300px;
+    }
+    div#content {
+      margin-bottom: 50%;
+    }
+  }
 
   #wrapper {
     margin: 0;
