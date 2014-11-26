@@ -44,6 +44,13 @@ body {
   .site-header .nav-main a.selected {
     color: #fff;
   }
+
+}
+
+@media (max-width:850px){
+  .footer {
+  min-height: 200px;
+  }
 }
 
 #authority_preview {
