@@ -65,7 +65,7 @@
 
     <%= render 'admin_general/admin_navbar' if is_admin? %>
 
-    <div class="entirebody">
+      <div class="master-header">
         <% popup_banner = render(partial: "general/popup_banner").strip %>
         <% if popup_banner.present? and  ! @render_to_file %>
         <div id="everypage" class="popup">
@@ -85,6 +85,7 @@
         <% else %>
             <%= render 'general/header' %>
         <% end %>
+      </div>
         <div id="wrapper">
             <div id="content">
                 <% if flash[:notice] %>
@@ -105,7 +106,6 @@
             <%= render :partial => 'general/footer' %>
         <% end %>
 
-    </div>
     <div id="link_box"><span class="close-button">X</span>
       <%= _("Paste this link into emails, tweets, and anywhere else:") %>
       <br />
