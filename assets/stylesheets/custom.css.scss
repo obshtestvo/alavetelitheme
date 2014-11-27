@@ -120,7 +120,7 @@ body {
     .footer {
     min-height: 300px;
     }
-    div#content {
+      #content {
       margin-bottom: 50%;
     }
   }
@@ -341,7 +341,7 @@ label#your-address {
   margin-bottom: 15px;
 }
 
-div#request_form .form_label {
+#request_form .form_label {
   display: inline-block;
   width: 46%;
   padding-right: inherit;
@@ -547,11 +547,11 @@ div.form_item_note {
     width: 100%;
   }
 
-div#request_header {
+#request_header {
   background-color: white;
 }
 
-div#request_header_text {
+#request_header_text {
   margin: 0px;
 }
 
@@ -1094,7 +1094,7 @@ form input[type=submit], a.link_button_green, a.link_button_green_large {
   font-size: 24px;
 }
 
-div#after_actions {
+#after_actions {
   display: inline-block;
   position: relative;
   float: left;
@@ -1109,7 +1109,7 @@ div#after_actions {
     }
 }
 
-div#after_actions strong {
+#after_actions strong {
   display: block;
   background-color: #ffefdf;
   width: 95%;
@@ -1117,7 +1117,7 @@ div#after_actions strong {
   color: #5D5D5D;
 }
 
-div#after_actions h2 {
+#after_actions h2 {
   margin: 0px;
   background-color: #FFB66F;
   color: white;
@@ -1130,14 +1130,14 @@ div#after_actions h2 {
   font-size: 13pt;
 
 }
-div#after_actions ul {
+#after_actions ul {
   list-style-type: none;
   font-color: #5D5D5D;
   font-family: 'Open Sans', sans-serif;
   padding: 0px;
 }
 
-div#after_actions a {
+#after_actions a {
   list-style-type: none;
   text-decoration: underline;
   color: #d74058;
@@ -1221,3 +1221,21 @@ div#after_actions a {
 #notice, .describe_state_form, #other_recipients, #error, #hidden_request {
   width: 100%;
 }
+
+@media (max-width: 768px) {
+  #wrapper #content {
+    margin-bottom: 15%;
+  }
+}
+@media (max-width: 650px) {
+   #wrapper #content {
+     margin-bottom: 15%;
+   }
+}
+
+@media (max-width: 445px) {
+  #wrapper #content {
+    margin-bottom: 40%;
+  }
+}
+
