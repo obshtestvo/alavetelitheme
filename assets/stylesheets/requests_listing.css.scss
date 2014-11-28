@@ -50,6 +50,28 @@
   }
 }
 
+
+.request_listing span.head a, .user_listing span.head a, .body_listing span.head a {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  color: #e7604a;
+}
+
+.request_listing .requester {
+  a {
+    color: #e7604a;
+    text-decoration: initial;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+  }
+}
+
+.request_listing, .user_listing, .body_listing {
+  border: 1px solid #ccc;
+  margin: 0 0 -1px;
+  padding: 12px 80px 6px;
+}
+
 #list-filter {
   text-align: left;
   hr {
