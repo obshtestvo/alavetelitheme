@@ -3,7 +3,6 @@
   > h1 {
     color: #3d3d3d;
     font-family: 'Open Sans', sans-serif;
-    font-size: 25pt;
     margin: 0;
   }
 }
@@ -33,13 +32,21 @@
     width: inherit;
     color: #3d3d3d;
     font-family: 'Open Sans', sans-serif;
-    font-size: 22pt;
     padding: 16px;
   }
 
   .request_listing {
     border: 0px;
     border-top: 1px solid #DDD;
+
+    span.desc {
+      line-height: 1.2em;
+    }
+  }
+
+  .request_listing,
+  .body_listing, .user_listing {
+    font-size: 1em;
   }
 }
 
@@ -63,7 +70,7 @@
   h3.title {
     display: block;
     width: inherit;
-    font-size: 9pt;
+    font-size: 0.9em;
     font-family: "Open Sans", sans-serif;
     text-transform: uppercase;
     font-weight: bold;
@@ -78,7 +85,7 @@
     width: 90%;
 
     .list-filter-item {
-      margin-bottom: 30pt;
+      margin-bottom: 15%;
     }
   }
 }
@@ -91,16 +98,19 @@
     list-style-type: none;
     line-height: 200%;
     font-family: 'Open Sans', sans-serif;
-    font-size: 12pt;
+    font-size: 1.1em;
 
     &:hover {
       background-color: #F9F7F9;
+    }
+
+    a {
+      font-size: 0.9em;
     }
   }
 
   a {
     color: #0B288D;
-    font-size: 11pt;
     text-decoration: none;
   }
 }
