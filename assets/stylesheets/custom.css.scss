@@ -1,6 +1,7 @@
 @import '960gs';
 @import 'modules/navigation';
 @import 'modules/search';
+@import 'requests_listing';
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,700,300&subset=cyrillic,latin);
 
 html {
@@ -17,8 +18,13 @@ body {
 }
 
 .nav-main {
+  width: 100%;
   padding: 0;
+  a {
+    font-size: 1em;
+  }
 }
+
 #request_form label, label.form_label {
   padding: 0; //override default value
 }
@@ -771,7 +777,7 @@ background:image-url('quote-marks.png') no-repeat;
 }
 
 .sign-in {
-  margin: 1.2em 0 0 0;
+  text-align: center;
   padding: 1.2em 0.1em;
   display: inline-block;
   text-decoration: none;
@@ -930,7 +936,7 @@ background:image-url('quote-marks.png') no-repeat;
 }
 
 .footer {
-  height: 220px;
+  min-height: 220px;
   position: absolute;
   left: 0;
   bottom: 0;
@@ -992,7 +998,7 @@ form input[type=submit], a.link_button_green, a.link_button_green_large {
 .form_item_note, .form_note {
   margin-left: 0px;
   display: inline-block;
-  width: 100%;
+  width: 60%;
 }
 
 .form_note#left {
@@ -1143,5 +1149,9 @@ div#after_actions {
   width: 100%;
 }
 
-@import 'requests_listing';
+
+#frontpage_splash #frontpage_right_to_know p {
+  line-height: 1.5em;
+}
+
 @import 'responsive/custom';
