@@ -226,6 +226,10 @@ background: initial;
   color:#6B3C6A;
 }
 
+form input[type=submit] {
+  font-size: 1.2em;
+}
+
 .form_button input[name = commit], input[name = reedit], input[name=submit] {
   height: 46px;
   border-color:inherit;
@@ -233,8 +237,8 @@ background: initial;
   text-shadow: none;
   font-weight: 600;
   font-family: 'Open Sans', sans-serif;
-  font-size: 12pt;
   padding: 2% 5%;
+  font-size: 1.2em;
   border-radius: 5px;
   background-color: #4A9D65;
 }
@@ -378,7 +382,7 @@ p#left.form_note {
 #request_new .left-list {
   list-style-type: none;
   color: #666;
-  font-size: 11pt;
+  font-size: inherit;
   margin-top: 3%;
   width: 94%;
   padding-left: 6%;
@@ -659,6 +663,7 @@ div.correspondence p.preview_subject strong {
   font-family: 'Open Sans' , sans-serif;
   font-weight: 400;
   margin-bottom: 0.9em;
+  line-height: 1.5em;
 }
 
 #preview_form h1 {
@@ -675,9 +680,11 @@ div.correspondence, div.outgoing.correspondence {
   background: #F6F8F8;
   color: #4F4F4F;
   width: 98%;
-
 }
 
+div.correspondence p.preview_subject {
+  font-size: inherit !important;
+}
 div.correspondence h2 {
   text-align: left;
   font-size: 1em;
@@ -999,6 +1006,7 @@ form input[type=submit], a.link_button_green, a.link_button_green_large {
   margin-left: 0px;
   display: inline-block;
   width: 60%;
+  font-size: inherit;
 }
 
 .form_note#left {
@@ -1121,6 +1129,7 @@ div#after_actions {
 }
 
 .act-title {
+  font-size: 1em;
   color: white;
   background-color: #9f5a7f;
 }
@@ -1155,3 +1164,12 @@ div#after_actions {
 }
 
 @import 'responsive/custom';
+
+.grid-40 {
+  padding: 0px;
+  width: 32%;
+}
+
+.admin ~ .master-header {
+  padding-top: 3em;
+}

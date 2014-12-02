@@ -78,6 +78,12 @@
 /* 1.5 dpr */
 @media(-webkit-min-device-pixel-ratio: 1.5),
 (min-resolution: 144dpi) {
+  @media (max-width:540px) {
+    #request_advice {
+      display: none
+    }
+  }
+
   body {
     font-size: 20px;
   }
@@ -86,6 +92,12 @@
 /* 2 dpr */
 @media(-webkit-min-device-pixel-ratio: 2),
 (min-resolution: 192dpi) {
+  @media (max-width:720px) {
+    #request_advice {
+      display: none;
+    }
+  }
+
   body {
     font-size: 24px;
   }
@@ -101,15 +113,37 @@
   }
   .site-header {
     font-size: 20px;
+    min-height: inherit;
   }
   #make-request-link {
     margin-right: 0px;
   }
   .nav-main a {
+    width: 37%;
+  }
+  .grid-30 {
+    padding: 0.2em;
     width: 35%;
+    margin-right: 1em;
   }
   .sign-in {
-    padding: 0px;
+    padding: 0.6em;
+  }
+
+  #banner_inner {
+    font-size: 0.7em;
+  }
+  .grid-70 {
+    width: 60%
+  }
+  .grid-75 {
+    margin-top: 0.5em;
+  }
+  .grid-25 h2, div.feed_link_main {
+    margin: 0.2em;
+  }
+  #request_new .left-list {
+    font-size: 0.9em;
   }
 }
 
@@ -121,16 +155,22 @@ and (device-aspect-ratio: 2/3) {
   body {
     font-size: 28px;
   }
-  #content {
-    margin-bottom: 1em;
+  @mixin footer-height($height) {
+    #wrapper {
+      margin-bottom: $height + 13px;
+    }
   }
+
   .footer {
-    font-size: 15px;
+    font-size: 20px;
   }
   #request_new .left-list {
-    font-size: 20px;
+    font-size: 0.9em;
   }
   span#to_public_body .authority-text {
     font-size: 28px;
+  }
+  .sign-in {
+    padding: 0.8em;
   }
 }
