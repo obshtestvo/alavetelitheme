@@ -29,8 +29,9 @@ body {
   padding: 0; //override default value
 }
 .site-header .nav-main a {
-  padding: 31px 6px;
+  padding: 3em 0.25em;
   font-size: 0.9em;
+  margin-right: 1%;
 
   &:last-child {
     margin-right: 0;
@@ -183,9 +184,9 @@ h1,h2,h3 {
 
 h1 {
   color:#93278F;
+  margin-top: 1em;
   font-size: 2em;
   text-align: center;
-
 }
 
 h2 {
@@ -218,6 +219,10 @@ color:#6B3C7F;
 color:#6B3C6A;
 font-family:'DeliciousRoman', Arial, sans-serif;
 font-weight:400;
+}
+
+.request_listing span.head,.user_listing span.head,.body_listing span.head {
+  margin-bottom: 0.5em;
 }
 
 .request_listing span.desc {
@@ -690,10 +695,14 @@ div.correspondence, div.outgoing.correspondence {
 div.correspondence p.preview_subject {
   font-size: inherit !important;
 }
+
 div.correspondence h2 {
   text-align: left;
   font-size: 1em;
+  padding-left: 0.9em;
+  padding-right: 0.9em;
 }
+
 div.correspondence time {
   text-align: right;
   font-size: 1em;
