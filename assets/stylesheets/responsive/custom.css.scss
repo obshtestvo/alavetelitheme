@@ -44,6 +44,17 @@
 @media (max-width: 768px) {
   @include footer-height(255px);
 }
+@media (max-width: 700px) {
+  #authority_selection {
+    display: inline-block;
+    width: 100%;
+  }
+  #authority_preview {
+    float: left;
+    width: 99%;
+    padding: 1%
+  }
+}
 
 @media (max-width: 685px) {
   @include footer-height(275px);
@@ -163,6 +174,7 @@ and (device-aspect-ratio: 2/3) {
 
   .footer {
     font-size: 20px;
+
   }
   #request_new .left-list {
     font-size: 0.9em;
@@ -172,5 +184,24 @@ and (device-aspect-ratio: 2/3) {
   }
   .sign-in {
     padding: 0.8em;
+  }
+  #authority_selection {
+    display: inline-block;
+    width: 100%;
+  }
+  #authority_preview {
+    float: left;
+    width: 99%;
+    padding: 1%;
+    background-color: #FFF;
+  }
+  a.link_button_green {
+    font-size: 1em;
+    padding: 1em;
+    margin-left: 2em;
+    border-radius: 5px;
+  }
+  #notice {
+    padding: 1em 1em;
   }
 }

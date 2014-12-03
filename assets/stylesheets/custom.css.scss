@@ -14,7 +14,7 @@ body {
   color:#444;
   font-family: 'Open Sans', sans-serif;
   text-align:left;
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .nav-main {
@@ -182,8 +182,10 @@ h1,h2,h3 {
 }
 
 h1 {
-color:#93278F;
-font-size:26pt;
+  color:#93278F;
+  font-size: 2em;
+  text-align: center;
+
 }
 
 h2 {
@@ -528,6 +530,9 @@ div.preview-request {
 
 #frontpage_splash #left_column {
   margin-top: 4%;
+}
+#left_column {
+  width: 70%;
 }
 
 #frontpage_splash {
@@ -954,7 +959,7 @@ background:image-url('quote-marks.png') no-repeat;
   background: #ededed;
 
   > .grid-container {
-    padding: 2% 0;
+    padding: 1% 0;
   }
 
   .footer-banner {
@@ -1002,6 +1007,12 @@ form input[type=submit], a.link_button_green, a.link_button_green_large {
   background-color: #4A9D65;
   border: none;
 }
+a.link_button_green {
+  padding: 0.5em;
+  margin-left: 2em;
+  border-radius: 5px;
+}
+
 .form_item_note, .form_note {
   margin-left: 0px;
   display: inline-block;
@@ -1049,11 +1060,11 @@ div#after_actions {
     }
 }
 
-#after_actions strong {
+div#after_actions strong {
   display: block;
   background-color: #ffefdf;
-  width: 95%;
-  padding: 6px;
+  width: 99%;
+  padding: 1%;
   color: #5D5D5D;
 }
 
@@ -1105,6 +1116,10 @@ div#after_actions {
 #report {
   margin-bottom: 40px;
 }
+#right_column {
+  width: 25%;
+  margin-top: 2em;
+}
 
 #frontpage_splash #right_column input[type=text], #header_left form input[type=text]#query {
   margin-bottom: 3%;
@@ -1122,6 +1137,9 @@ div#after_actions {
   padding-top: 0.8em;
   padding-bottom: 0.8em;
   margin-bottom: 0.8em;
+  margin-left: 1em;
+  border-radius: 5px;
+
 }
 
 .sign-in {
@@ -1155,15 +1173,20 @@ div#after_actions {
 }
 
 #notice, .describe_state_form, #other_recipients, #error, #hidden_request {
-  width: 100%;
+  display: inline-block;
+  width: 98%;
 }
 
+#notice {
+  margin: 2% 0;
+  padding: 1em 2em;
+  width: 90%;
+}
 
 #frontpage_splash #frontpage_right_to_know p {
   line-height: 1.5em;
 }
 
-@import 'responsive/custom';
 
 .grid-40 {
   padding: 0px;
@@ -1173,3 +1196,5 @@ div#after_actions {
 .admin ~ .master-header {
   padding-top: 3em;
 }
+
+@import 'responsive/custom';
