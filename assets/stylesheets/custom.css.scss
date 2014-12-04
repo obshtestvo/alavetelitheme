@@ -1,8 +1,7 @@
-@import '960gs';
-@import 'modules/navigation';
-@import 'modules/search';
-@import 'requests_listing';
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,700,300&subset=cyrillic,latin);
+//= require '960gs'
+//= require 'modules/navigation'
+//= require 'modules/search'
+//= require 'requests_listing'
 
 html {
   position: relative;
@@ -1210,4 +1209,4 @@ div#after_actions strong {
   padding-top: 3em;
 }
 
-@import 'responsive/custom';
+//= require 'responsive/custom';
