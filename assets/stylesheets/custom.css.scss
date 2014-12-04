@@ -183,9 +183,9 @@ h1,h2,h3 {
 
 h1 {
   color:#93278F;
+  margin-bottom: 1em;
   margin-top: 1em;
   font-size: 2em;
-  text-align: center;
 }
 
 h2 {
@@ -1145,7 +1145,6 @@ div#after_actions strong {
   padding-top: 0.8em;
   padding-bottom: 0.8em;
   margin-bottom: 0.8em;
-  margin-left: 1em;
   border-radius: 5px;
 
 }
@@ -1199,6 +1198,10 @@ div#after_actions strong {
 .grid-40 {
   padding: 0px;
   width: 32%;
+}
+
+.grid-100 {
+  padding-left: 0px;
 }
 
 .admin ~ .master-header {
