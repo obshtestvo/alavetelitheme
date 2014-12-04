@@ -110,6 +110,10 @@ form input.use-datepicker[type=text] {
   background-position: 94% 50%;
 }
 
+#header_left input {
+  border-radius: 5px;
+}
+
 #banner {
   background-repeat:no-repeat;
   background-position:center top;
@@ -243,7 +247,6 @@ form input[type=submit] {
   text-shadow: none;
   font-weight: 600;
   font-family: 'Open Sans', sans-serif;
-  padding: 2% 5%;
   font-size: 1.2em;
   border-radius: 5px;
   background-color: #4A9D65;
