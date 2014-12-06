@@ -3,6 +3,8 @@
 //= require 'modules/search'
 //= require 'requests_listing'
 
+$header-background-color: #4f003d;
+
 html {
   position: relative;
   min-height: 100%;
@@ -28,21 +30,25 @@ body {
   padding: 0; //override default value
 }
 .site-header .nav-main a {
-  padding: 3em 0.25em;
-  font-size: 0.9em;
+  padding: 1.4em 0.25em;
+  font-size: 1.2em;
   margin-right: 1%;
+  width: 7.5em;
+  text-align: center;
+
+  &:hover {
+    background-color: lighten($header-background-color, 5%);
+    text-decoration: none;
+  }
 
   &:last-child {
     margin-right: 0;
   }
 
   &.selected {
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    background-color: #F0F0F0;
-    //    padding-top: 20px;
-    padding-bottom: 3.1em;
-
+    background-color: #f0f0f0;
+    color: #000;
+    cursor: pointer;
   }
 }
 
@@ -727,9 +733,8 @@ background:image-url('quote-marks.png') no-repeat;
 
 .site-header{
   padding: 5px 0 0 0;
-  //  min-height: 82px;
-    min-height: 6.7em;
-  background: #4f003d;
+  min-height: 6.7em;
+  background-color: $header-background-color;
 }
 
 .form-search {

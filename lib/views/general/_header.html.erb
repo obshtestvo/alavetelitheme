@@ -1,7 +1,7 @@
 <header class="site-header">
 
   <div class="grid-container">
-    <div class="grid-10 mobile-grid-20 most-left-cell">
+    <div class="grid-15 mobile-grid-20 most-left-cell">
       <%= render 'general/orglink' %>
     </div>
     <div class="grid-40">
@@ -9,7 +9,7 @@
         <%= render 'general/topnav' %>
       </nav>
     </div>
-    <div class="grid-30">
+    <div class="grid-25">
       <%= form_tag search_redirect_path, method: :post, class: 'form-search' do %>
         <%= text_field_tag 'header-query', params[:query], size: 40, title: 'type your search term here' %>
         <span class="submit"><%= submit_tag 'search' %></span>
