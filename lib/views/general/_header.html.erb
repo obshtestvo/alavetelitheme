@@ -1,7 +1,7 @@
 <header class="site-header">
 
   <div class="grid-container">
-    <div class="grid-15 mobile-grid-20 most-left-cell" style="width: 134px">
+    <div class="grid-15 mobile-grid-20 most-left-cell" style="width: 140px">
       <%= render 'general/orglink' %>
     </div>
     <div class="grid-40">
@@ -15,19 +15,13 @@
         <span class="submit"><%= submit_tag 'search' %></span>
       <% end %>
     </div>
-    <div class="grid-20">
+    <div class="grid-20" style="float: right">
       <% if @user %>
       <ul class="login-stuff">
         <li>
           <%= link_to(show_user_requests_path(url_name: @user.url_name), class: 'btn-flag') do %>
             <%= _("My requests") %>
             <span class="unread-messages">2</span>
-          <% end %>
-        </li>
-        <li>
-          <%= link_to show_user_requests_path(url_name: @user.url_name), class: 'btn-message' do %>
-          <%= _("My requests") %>
-          <span class="unread-messages unread-messages-red">4</span>
           <% end %>
         </li>
         <li class="btn-user">

@@ -1,0 +1,24 @@
+@mixin grid-n($width) {
+  .grid-container .grid-#{$width} {
+    float: left;
+    width: percentage(($width * 1.0)/100);
+  }
+}
+
+@mixin grid-generator {
+  .grid-container {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @for $factor from 1 through 20 {
+    @include grid-n($factor * 5);
+  }
+
+  .grid-container .grid-100 {
+    clear: both;
+  }
+}
+
+@include grid-generator;
