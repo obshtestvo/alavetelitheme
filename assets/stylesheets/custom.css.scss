@@ -24,6 +24,7 @@ body {
   padding: 0;
   a {
     font-size: 1em;
+    margin-right: 0.3em;
   }
 }
 
@@ -31,21 +32,24 @@ body {
   padding: 0; //override default value
 }
 
+.site-header {
+  min-height: 7.4em;
+  background-color: $header-background-color;
+
+  .nav-main {
+    width: auto;
+  }
+}
+
 .site-header .nav-main a {
-  padding: 1.5em 0.25em;
+  padding: 2em 0.25em;
   font-size: 1.2em;
-  margin-right: 1%;
   width: 7.5em;
   text-align: center;
 
   &:hover {
     background-color: lighten($header-background-color, 5%);
     text-decoration: none;
-    padding-bottom: 1.4em;
-  }
-
-  &:last-child {
-    margin-right: 0;
   }
 
   &.selected {
@@ -64,6 +68,7 @@ body {
   width: 960px;
   min-height: 385px;
   margin: 0 auto 240px;
+  padding-top: 1em;
 
   #content {
     width: 100%;
@@ -128,7 +133,6 @@ form input.use-datepicker[type=text] {
   background-color: $subheader-background-color;
   height: inherit;
   color: #3d3d3d;
-  margin-bottom: 1em;
 
   h1 {
     color: #6E1C6A;
@@ -196,7 +200,6 @@ h1,h2,h3 {
 
 h1 {
   color:#93278F;
-  margin-bottom: 1em;
   margin-top: 1em;
   font-size: 2em;
 }
@@ -735,14 +738,8 @@ background:image-url('home-grad.png') repeat-x 0 160px;
 background:image-url('quote-marks.png') no-repeat;
 }
 
-.site-header {
-  padding: 5px 0 0 0;
-  min-height: 6.8em;
-  background-color: $header-background-color;
-}
-
 .form-search {
-  margin: 15px 0 0 0;
+  margin: 1.75em 0 0 0.6em;
   padding: 10px 0 0 0;
   width: 100%;
   height: 40px;
@@ -809,9 +806,12 @@ background:image-url('quote-marks.png') no-repeat;
 
 .sign-in {
   text-align: center;
-  padding: 1.2em 0.1em;
   display: inline-block;
   text-decoration: none;
+  padding: 0.7em 0.4em;
+  width: 7.5em;
+  font-size: 1.2em;
+  margin-top: 1em;
   border-radius: 5px;
   background: #fff;
 }
@@ -1147,6 +1147,9 @@ div#after_actions strong {
 
 .most-left-cell {
   padding-left: 0;
+  a {
+    display: inline-block;
+  }
 }
 
 .fieldWithErrors {
@@ -1158,10 +1161,6 @@ div#after_actions strong {
   padding-bottom: 0.8em;
   margin-bottom: 0.8em;
   border-radius: 5px;
-}
-
-.sign-in {
-  font-size: 0.9em;
 }
 
 .act-title {

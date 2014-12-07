@@ -1,6 +1,12 @@
 @mixin grid-n($width) {
+  .grid-style {
+    display: inline-block;
+    vertical-align: top;
+  }
+
   .grid-container .grid-#{$width} {
-    float: left;
+    display: inline-block;
+    vertical-align: top;
     width: percentage(($width * 1.0)/100);
   }
 }
