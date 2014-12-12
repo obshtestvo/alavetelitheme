@@ -25,6 +25,10 @@
   .grid-container .grid-100 {
     clear: both;
   }
+
+  .grid-70 {
+    line-height: 1.8em;
+  }
 }
 
 @include grid-generator;
