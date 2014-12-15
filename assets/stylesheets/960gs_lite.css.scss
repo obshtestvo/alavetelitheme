@@ -6,7 +6,7 @@
 
   .grid-container .grid-#{$width} {
     display: inline-block;
-    vertical-align: top;
+    vertical-align: middle;
     width: percentage(($width * 1.0)/100);
   }
 }
