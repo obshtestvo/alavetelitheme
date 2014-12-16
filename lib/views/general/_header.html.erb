@@ -19,6 +19,7 @@
     </div>
     <div class="grid-15 account">
       <% if @user %>
+        <div class="login">
       <ul class="login-stuff">
         <li>
           <%= link_to(show_user_requests_path(url_name: @user.url_name), class: 'btn-flag') do %>
@@ -43,6 +44,7 @@
         <%= link_to _("Sign in or sign up"), signin_path(r: request.fullpath), class: 'sign-in' %>
       <% end %>
     </div>
+  </div>
   </div>
 </header>
 

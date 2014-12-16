@@ -30,11 +30,22 @@ body {
 
 #header-query {
   font-size: 1.2em;
+  background-color: #C2A1A1;
+  opacity: 0.3;
+  margin: 0;
+  margin-right: 0.4em;
+  padding: 0 0.3em;
+  height: 2.8em;
 
   &:focus {
-
+    background-color: white;
   }
+
 }
+ input::-webkit-input-placeholder {
+  color: black;
+}
+
 
 #request_form label, label.form_label {
   padding: 0; //override default value
@@ -742,11 +753,12 @@ background:image-url('quote-marks.png') no-repeat;
 }
 
 .form-search {
-//  margin: 1.75em 0 0 0em;
-  padding: 10px 0 0 0;
+  padding: 0px 0 0 0;
   width: 100%;
   height: 40px;
   background: #fff;
+  margin-right: 2em;
+  height: 3.3em;
 
   input[type=text] {
     margin: 0 0 0 7px;
@@ -768,7 +780,7 @@ background:image-url('quote-marks.png') no-repeat;
     border: solid 2px #d1233e;
     border-radius: 20px;
     background: #fff;
-    margin-top: 0.2em;
+    margin-top: 0.7em;;
 
     &:before {
       position: absolute;
@@ -816,7 +828,7 @@ background:image-url('quote-marks.png') no-repeat;
   font-size: 1.2em;
   border-radius: 5px;
   background: #fff;
-  margin-left: 1.4em;
+  margin-left: 1.2em;
 
 }
 
@@ -826,10 +838,10 @@ background:image-url('quote-marks.png') no-repeat;
 
   > li {
     display: block;
-    width: 3em;
+    width: 2em;
     height: 2.4em;
     float: left;
-    padding-left: 0.3em;
+    padding-left: 0.7em;
   }
 
   .btn-flag {
@@ -855,6 +867,7 @@ background:image-url('quote-marks.png') no-repeat;
   .btn-user {
     position: relative;
     z-index: 200;
+    margin-left: 1em;
   }
 
   .btn-user:before {
@@ -868,8 +881,8 @@ background:image-url('quote-marks.png') no-repeat;
 
   .btn-user:after {
     position: absolute;
-    top: 0.9em;
-    right: -1.1em;
+    top: 0.7em;
+    right: -1.9em;
     content: "▼";
     display: block;
     width: 28px;
@@ -900,7 +913,7 @@ background:image-url('quote-marks.png') no-repeat;
     left: 14px;
     z-index: 5;
     display: block;
-    width: 28px;
+    width: 25px;
     height: 24px;
     opacity: 0;
     cursor: pointer;
@@ -1163,8 +1176,8 @@ div#after_actions strong {
 }
 
 .search {
-  margin-left: 2em;
-  margin-right: 2em;
+  margin-left: 4%;
+  margin-right: 2%;
 }
 
 #search_form input[type=submit]{
@@ -1216,7 +1229,9 @@ div#after_actions strong {
 }
 
 .grid-15.account {
-  width: 10%;
+  width: 17%;
+  float: right;
+  margin-top: 2%;
 }
 
 .grid-40 {
@@ -1242,6 +1257,11 @@ div#after_actions strong {
   width: 20%;
   float: left;
   margin: 0 2% 0 0;
+}
+
+.login {
+  margin-top: 0.9em;
+  float: right;
 }
 
 //= require 'responsive/custom';
