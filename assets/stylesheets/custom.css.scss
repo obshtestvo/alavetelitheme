@@ -1015,9 +1015,23 @@ background:image-url('quote-marks.png') no-repeat;
     display: inline-block;
     width: 100%;
     padding-left: 12em;
-      img {
-        margin-right: 2em;
+    img {
+      margin-right: 2em;
+      -webkit-filter: grayscale(100%);
+      -moz-filter: grayscale(100%);
+      filter: grayscale(100%);
+      filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+      opacity: 0.6;
+      transition: all 150ms ease-in-out;
+      &:hover {
+        -webkit-filter: grayscale(0%);
+        -moz-filter: grayscale(0%);
+        filter: grayscale(0%);
+        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+        opacity: 1;
+        transition: all 150ms ease-in-out;
       }
+    }
   }
 
   .brand-link {
