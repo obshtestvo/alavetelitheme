@@ -971,8 +971,8 @@ background:image-url('quote-marks.png') no-repeat;
 
   .user-drop-menu {
     position: absolute;
-    right: 14px;
-    top: 45px;
+    right: 0px;
+    top: 42px;
     z-index: 200;
     margin: 0;
     padding: 0;
@@ -985,17 +985,20 @@ background:image-url('quote-marks.png') no-repeat;
 
     li {
       position: relative;
-      padding: 10px 18px;
       border-top: solid 1px #d6d6d6;
     }
 
-    li:first-child { border: 0; }
+    li:first-child {
+      border: 0;
+      padding: 0.5em 1em;
+    }
     li:first-child:before {
       position: absolute;
-      top: -10px;
+      top: -13px;
       right: 10px;
       content: "▲";
       color: #fff;
+      font-size: 15px;
     }
 
     @mixin user-menu-sprite {
@@ -1010,9 +1013,9 @@ background:image-url('quote-marks.png') no-repeat;
       content: "";
     }
 
-    li.icon-dahsboard:after { @include user-menu-sprite; background-position: -42px -38px; }
-    li.icon-settings:after  { @include user-menu-sprite; background-position: -21px -38px; }
-    li.icon-logout:after  {   @include user-menu-sprite; background-position: 0 -38px; }
+    li.icon-dahsboard a:after { @include user-menu-sprite; background-position: -42px -38px; }
+    li.icon-settings a:after  { @include user-menu-sprite; background-position: -21px -38px; }
+    li.icon-logout a:after  {   @include user-menu-sprite; background-position: 0 -38px; }
 
     li a {
       display: block;
@@ -1020,6 +1023,7 @@ background:image-url('quote-marks.png') no-repeat;
       color: #606060;
       text-decoration: none;
       font-size: 1.1em;
+      padding: 0.5em 1em;
     }
 
     li a:hover {

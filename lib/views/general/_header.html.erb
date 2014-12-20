@@ -21,24 +21,17 @@
     <div class="grid-15 account">
       <% if @user %>
         <div class="login">
-      <ul class="login-stuff">
-        <li>
-          <%= link_to(show_user_requests_path(url_name: @user.url_name), class: 'btn-flag') do %>
-            <%= _("My requests") %>
-            <span class="unread-messages">2</span>
-          <% end %>
-        </li>
-        <li class="btn-user">
-          <input type="checkbox" class="show-drop-menu" />
-          <ol class="user-drop-menu">
-            <li><%= _('Hello, {{username}}!', :username => h(@user.name))%></li>
-            <li class="icon-dahsboard"><%= link_to _("My wall"), show_user_wall_path(url_name: @user.url_name) %></li>
-            <li class="icon-settings"><%= link_to _("My profile"), show_user_profile_path(url_name: @user.url_name) %></li>
-            <li class="icon-logout"><%= link_to _("Sign out"), signout_path(r: request.fullpath) %></li>
-          </ol>
-        </li>
-
-      </ul>
+        <ul class="login-stuff">
+          <li class="btn-user">
+            <input type="checkbox" class="show-drop-menu" />
+            <ol class="user-drop-menu">
+              <li><%= _('Hello, {{username}}!', :username => h(@user.name))%></li>
+              <li class="icon-dahsboard"><%= link_to _("My wall"), show_user_wall_path(url_name: @user.url_name) %></li>
+              <li class="icon-settings"><%= link_to _("My profile"), show_user_profile_path(url_name: @user.url_name) %></li>
+              <li class="icon-logout"><%= link_to _("Sign out"), signout_path(r: request.fullpath) %></li>
+            </ol>
+          </li>
+        </ul>
         <%#= _('Hello, {{username}}!', username: h(@user.name))%>
 
       <% else %>
