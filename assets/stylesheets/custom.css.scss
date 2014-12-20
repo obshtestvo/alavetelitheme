@@ -52,16 +52,19 @@ body {
 }
 
 .site-header {
-  min-height: 7.4em;
   background-color: $header-background-color;
 
   .nav-main {
     width: auto;
   }
+
+  .logo {
+    width: 119px;
+  }
 }
 
 .site-header .nav-main a {
-  padding: 2em 0.25em;
+  padding: 1.5em 0.25em;
   font-size: 1.2em;
   width: 7.5em;
   text-align: center;
@@ -823,7 +826,6 @@ background:image-url('quote-marks.png') no-repeat;
   text-decoration: none;
   padding: 0.7em 0.4em;
   width: 7.5em;
-  font-size: 1.2em;
   border-radius: 5px;
   background: #fff;
   margin-left: 1.2em;
