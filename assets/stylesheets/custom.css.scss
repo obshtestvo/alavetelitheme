@@ -8,6 +8,24 @@
 $header-background-color: #4f003d;
 $subheader-background-color: #fff;
 
+@mixin placeholder($color) {
+  &::-webkit-input-placeholder {
+    color: $color;
+  }
+
+  &:-moz-placeholder { /* Firefox 18- */
+    color: $color;
+  }
+
+  &::-moz-placeholder {  /* Firefox 19+ */
+    color: $color;
+  }
+
+  &:-ms-input-placeholder {
+    color: $color;
+  }
+}
+
 html {
   position: relative;
   min-height: 100%;
@@ -58,12 +76,12 @@ body {
   }
 
   .logo {
-    width: 119px;
+    width: 100px;
   }
 }
 
 .site-header .nav-main a {
-  padding: 1.5em 0.25em;
+  padding: 1.2em 0.25em;
   font-size: 1.2em;
   width: 7.5em;
   text-align: center;
@@ -771,6 +789,8 @@ background:image-url('quote-marks.png') no-repeat;
     color: #222;
     border: 0;
     font-size: 1em;
+
+    @include placeholder(#666);
   }
   .address-field {
     margin-top: 0.9em;
@@ -829,10 +849,14 @@ background:image-url('quote-marks.png') no-repeat;
   text-decoration: none;
   padding: 0.6em 0.4em;
   width: 7.5em;
-  border-radius: 5px;
+  border-radius: 2px;
   background: #fff;
   margin-left: 1.2em;
   float: right;
+
+  &:hover {
+    background-color: rgb(246, 245, 245);
+  }
 }
 
 .login-stuff {
@@ -1264,7 +1288,7 @@ div#after_actions strong {
 .grid-15.account {
   width: 17%;
   float: right;
-  margin-top: 1.4em;
+  margin-top: 1.2em;
 }
 
 .grid-40 {
