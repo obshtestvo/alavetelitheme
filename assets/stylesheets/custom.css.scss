@@ -697,7 +697,7 @@ div.correspondence p.preview_subject strong {
   list-style-type: none;
 }
 #preview_form p, div.correspondence h2 {
-  color: #4F4F4F;
+  color: #8e8d8d;
   font-family: 'Open Sans' , sans-serif;
   font-weight: 400;
   margin-bottom: 0.9em;
@@ -712,10 +712,8 @@ div.correspondence p.preview_subject strong {
 }
 
 div.correspondence, div.outgoing.correspondence {
-  border: 1px solid #ccc;
   margin-top: 5%;
   padding-right: 0px;
-  background: #F6F8F8;
   color: #4F4F4F;
   width: 98%;
 }
@@ -1070,13 +1068,15 @@ a.link_button_green {
 
 #follow_box h2 {
   background-color: #4A9D65;
-  padding: 5%;
+  text-align: center;
+  padding: 0.5em 0em;
   color: white;
   font-size: 1.5em;
+  border-radius: 3px;
 }
 
 div#after_actions {
-  width: 100%;
+  width: 99%;
 }
 
 
@@ -1087,7 +1087,7 @@ div#after_actions {
   width: 99%;
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
-  border: 1px solid #ffefdf;
+  border: 1px solid #f2e5ec;
   border-top-right-radius: 6px;
   border-top-left-radius: 6px;
     li {
@@ -1097,18 +1097,19 @@ div#after_actions {
 
 div#after_actions strong {
   display: block;
-  background-color: #ffefdf;
-  width: 99%;
-  padding: 1%;
+  background-color: #f2e5ec;
+  width: 98%;
+  padding: 0.2em;
   color: #5D5D5D;
 }
 
 #after_actions h2 {
+  width: 91%;
   margin: 0px;
-  background-color: #FFB66F;
+  background-color: #9f5a7f;
   color: white;
-  padding: 4%;
-  border: #FFB66F 1px solid;
+  padding: 0.7em 0.73em;
+  border: #9f5a7f 1px solid;
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
   font-family: 'Open Sans', sans-serif;
@@ -1126,8 +1127,8 @@ div#after_actions strong {
 #after_actions a {
   list-style-type: none;
   text-decoration: underline;
-  color: #d74058;
-  padding: 4px;
+  color: #9f5a7f;
+  padding: 0em;
   display: block;
   width: 100%;
 }
@@ -1152,7 +1153,7 @@ div#after_actions strong {
   margin-bottom: 40px;
 }
 #right_column {
-  width: 25%;
+  width: 17em;
   margin-top: 2em;
 }
 
@@ -1194,23 +1195,26 @@ div#after_actions strong {
 }
 
 .act_link {
-  background-color: #f2e5ec;
   width: 85%;
   color: #545255;
   margin-bottom: 7%;
   margin-top: 4%;
-  padding: 7%;
-  margin-top: 1%;
+  margin-top: 1em;
   margin-bottom: 0%;
 }
 
 .act-title, .act_link a {
-  padding: 3%;
-  width: 93%;
+  padding: 0.7em 0.7em;
+  width: 92%;
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   border-radius: 3px;
   margin: 0px;
+  margin-top: 1em;
+}
+.act_link a img {
+  width: 21%;
+  margin-bottom: 0.5em;
 }
 
 #notice, .describe_state_form, #other_recipients, #error, #hidden_request {
@@ -1220,8 +1224,10 @@ div#after_actions strong {
 
 #notice {
   margin: 2% 0;
-  padding: 1em 2em;
-  width: 90%;
+  padding: 1em 1em;
+  width: 96%;
+  border-radius: 2px;
+  font-size: 1.3em
 }
 
 #frontpage_splash #frontpage_right_to_know p {
