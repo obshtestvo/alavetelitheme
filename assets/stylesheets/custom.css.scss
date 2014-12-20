@@ -30,8 +30,7 @@ body {
 
 #header-query {
   font-size: 1.2em;
-  background-color: #C2A1A1;
-  opacity: 0.3;
+  background-color: rgba(#C2A1A1 ,0.3);
   margin: 0;
   margin-right: 0.4em;
   padding: 0 0.3em;
@@ -767,7 +766,6 @@ background:image-url('quote-marks.png') no-repeat;
     width: 81%;
     color: #d1233e;
     border: 0;
-    font-family: Tahoma;
     font-size: 1em;
   }
   .address-field {
