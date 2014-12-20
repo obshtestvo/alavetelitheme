@@ -88,7 +88,7 @@ body {
   height: 70%;
   width: 960px;
   min-height: 385px;
-  margin: 0 auto 240px;
+  margin: 0 auto 450px;
   padding-top: 1em;
 
   #content {
@@ -992,7 +992,7 @@ background:image-url('quote-marks.png') no-repeat;
   background: #ededed;
 
   > .grid-container {
-    padding: 0.7em 0;
+    padding: 1.7em 0;
   }
 
   .footer-banner {
@@ -1002,19 +1002,23 @@ background:image-url('quote-marks.png') no-repeat;
   }
 
   .footer-credits {
-    padding: 1.3em 0 0 0;
+    padding: 2.4em 0 0 0;
     font-size: 1em;
     border-top: solid 1px #bebebe;
+    margin-top: 1em;
     .text-justify {
       line-height: 1.5em;
+      width: 70%;
+      margin: 2em auto;
+      text-align: center;
     }
   }
 
   .footer-rights {
     line-height: 1.8em;
     display: inline-block;
-    width: 100%;
-    padding-left: 12em;
+    width: 80%;
+    padding-left: 18%;
     img {
       margin-right: 2em;
       -webkit-filter: grayscale(100%);
