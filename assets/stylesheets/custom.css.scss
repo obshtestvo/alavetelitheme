@@ -164,9 +164,15 @@ form input.use-datepicker[type=text] {
   background-position: 94% 50%;
 }
 
-#header_left input {
-  border-radius: 2px;
+#header_left {
+  input {
+    border-radius: 2px;
+  }
+  h1 {
+    font-size: 1.5em;
+  }
 }
+
 
 #banner {
   background-repeat:no-repeat;
