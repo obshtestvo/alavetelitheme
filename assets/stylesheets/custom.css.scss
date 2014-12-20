@@ -827,12 +827,12 @@ background:image-url('quote-marks.png') no-repeat;
   text-align: center;
   display: inline-block;
   text-decoration: none;
-  padding: 0.7em 0.4em;
+  padding: 0.6em 0.4em;
   width: 7.5em;
   border-radius: 5px;
   background: #fff;
   margin-left: 1.2em;
-
+  float: right;
 }
 
 .login-stuff {
@@ -1264,7 +1264,7 @@ div#after_actions strong {
 .grid-15.account {
   width: 17%;
   float: right;
-  margin-top: 2%;
+  margin-top: 1.4em;
 }
 
 .grid-40 {
@@ -1298,7 +1298,6 @@ div#after_actions strong {
 }
 
 .login {
-  margin-top: 0.9em;
   float: right;
 }
 
