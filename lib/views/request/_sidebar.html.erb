@@ -43,7 +43,7 @@
 
   <!-- this link with this wording is here for legal reasons, discuss with
   board and our lawyer before changing or removing it -->
-    <p><small><%= link_to _('Are you the owner of any commercial copyright on this page?'), help_officers_path+"#copyright" %></small></p>
+    <p><%= link_to _('Are you the owner of any commercial copyright on this page?'), help_officers_path+"#copyright" %></p>
   <div id="follow_box">
     <% follower_count = TrackThing.count(:all, :conditions => ["info_request_id = ?", @info_request.id]) + 1 %>
     <p>
