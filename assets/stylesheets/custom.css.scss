@@ -1002,13 +1002,22 @@ background:image-url('quote-marks.png') no-repeat;
   }
 
   .footer-credits {
-    padding: 0.7em 0 0 0;
+    padding: 1.3em 0 0 0;
     font-size: 1em;
     border-top: solid 1px #bebebe;
+    .text-justify {
+      line-height: 1.5em;
+    }
   }
 
   .footer-rights {
     line-height: 1.8em;
+    display: inline-block;
+    width: 100%;
+    padding-left: 12em;
+      img {
+        margin-right: 2em;
+      }
   }
 
   .brand-link {
@@ -1022,12 +1031,7 @@ background:image-url('quote-marks.png') no-repeat;
   }
 }
 
-
-.pull-right {
-  float: right;
-}
-
-.pull-left {
+.pull-left, .pull-right {
   float: left;
 }
 
@@ -1256,13 +1260,18 @@ div#after_actions strong {
 }
 
 .grid-70.footer-rights {
+  display: inline-block;
   width: 100%;
+  padding-left: 12em;
+    img {
+      margin-right: 2em;
+    }
 }
 
 .logo {
   width: 20%;
   float: left;
-  margin: 0 2% 0 0;
+  margin-right: 2em;
 }
 
 .login {
