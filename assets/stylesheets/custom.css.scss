@@ -165,7 +165,7 @@ form input.use-datepicker[type=text] {
 }
 
 #header_left input {
-  border-radius: 5px;
+  border-radius: 2px;
 }
 
 #banner {
@@ -1021,6 +1021,19 @@ background:image-url('quote-marks.png') no-repeat;
   color: #707070;
   border-top: solid 1px #ccc;
   background: #ededed;
+
+  ul.navigation {
+    list-style-type: none;
+    padding-left: 0;
+
+    li {
+      &:first-child {
+        padding-left: 0;
+      }
+      padding: 0 2% 0 0;
+      display: inline-block;
+    }
+  }
 
   > .grid-container {
     padding: 1.7em 0;

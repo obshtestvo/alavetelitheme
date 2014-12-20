@@ -2,18 +2,11 @@
   <div class="grid-container">
     <div class="grid-70">
       <nav class="nav-main nav-footer">
-        <%= render 'general/topnav' %>
-
         <%# TODO: Create translation for 'Search authorities' %>
         <%= link_to 'Search authorities', admin_body_list_path if is_admin? %>
       </nav>
       <nav class="nav-main nav-footer nav-footer-sub">
-        <%= link_to 'Request guide ', '' %>
-        <%= link_to 'About', '' %>
-        <%= link_to 'News & Stats', '' %>
-        <%= link_to 'Help &  FAQ', '' %>
-        <%= link_to 'Privacy Policy', '' %>
-        <%= link_to 'Contact', help_contact_path %>
+        <%= render 'general/bottom_nav' %>
       </nav>
     </div>
     <div class="grid-30" style="width: 29%">
