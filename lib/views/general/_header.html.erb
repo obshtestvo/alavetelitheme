@@ -14,7 +14,8 @@
     <div class="grid-30 search">
       <%= form_tag search_redirect_path, method: :post, class: 'form-search' do %>
         <%= text_field_tag 'header-query', params[:query], size: 40, title: 'type your search term here', placeholder: "Търси заявление..." %>
-        <span class="submit"><%= submit_tag 'search' %></span>
+        <span class="magnifier"></span>
+        <%= submit_tag 'search' %>
       <% end %>
     </div>
     <div class="grid-15 account">
