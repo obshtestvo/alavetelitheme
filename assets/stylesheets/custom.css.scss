@@ -3,6 +3,8 @@
 //= require 'modules/search'
 //= require 'requests_listing'
 
+@import "compass/css3/transform";
+
 $header-background-color: #4f003d;
 $subheader-background-color: #fff;
 
@@ -32,14 +34,12 @@ body {
   font-size: 1.2em;
   background-color: rgba(#C2A1A1 ,0.3);
   margin: 0;
-  margin-right: 0.4em;
-  padding: 0 0.3em;
-  height: 2.8em;
+  padding: 0.1em 0.5em;
+  height: 2.6em;
 
   &:focus {
     background-color: white;
   }
-
 }
  input::-webkit-input-placeholder {
   color: black;
@@ -130,6 +130,8 @@ img {
 }
 
 form input[type=text], form input[type=password] {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
   margin-bottom: 10px;
   width: 80%;
 }
@@ -753,6 +755,7 @@ background:image-url('quote-marks.png') no-repeat;
 }
 
 .form-search {
+  position: relative;
   padding: 0px 0 0 0;
   width: 100%;
   height: 40px;
@@ -761,10 +764,11 @@ background:image-url('quote-marks.png') no-repeat;
   height: 3.3em;
 
   input[type=text] {
+    float: left;
     margin: 0 0 0 7px;
     display: inline-block;
-    width: 81%;
-    color: #d1233e;
+    width: 80%;
+    color: #222;
     border: 0;
     font-size: 1em;
   }
@@ -772,14 +776,18 @@ background:image-url('quote-marks.png') no-repeat;
     margin-top: 0.9em;
   }
 
-  .submit {
+  .magnifier {
     position: absolute;
-    display: inline-block;
-    text-indent: -9999%;
+    top: 0;
+    right: 0;
+    width: 1em;
+    height: 1em;
+    display: block;
     border: solid 2px #d1233e;
     border-radius: 20px;
     background: #fff;
-    margin-top: 0.7em;;
+    margin-right: 1em;
+    margin-top: 0.7em;
 
     &:before {
       position: absolute;
@@ -792,9 +800,7 @@ background:image-url('quote-marks.png') no-repeat;
       border-radius: 5px;
       background: #d1233e;
 
-      //TODO add mixins
-      -webkit-transform: rotate(51deg);
-      transform: rotate(51deg);
+      @include rotate(51deg);
     }
 
     &:hover {
@@ -808,13 +814,12 @@ background:image-url('quote-marks.png') no-repeat;
 
   input[type=submit] {
     position: relative;
-    left: -0.1em;
-    top: -0.1em;
+    float: right;
     display: block;
     opacity: 0;
-    width: 0.8em;
-    height: 0.8em;
     background: red;
+    width: 2.4em;
+    height: 2.8em;
   }
 }
 
