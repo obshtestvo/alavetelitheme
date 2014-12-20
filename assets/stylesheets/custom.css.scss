@@ -148,8 +148,10 @@ img {
 }
 
 form input[type=text], form input[type=password] {
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
   margin-bottom: 10px;
   width: 80%;
 }
