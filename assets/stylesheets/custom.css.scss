@@ -247,23 +247,25 @@ font-size: 1.3em;
 
 h2,dt {
 color:#93278F;
-//font-family:'DeliciousBold', Arial, sans-serif;
+margin-top: 1.5em;
 font-weight:400;
 }
 
 h3 {
-color:#6B3C6A;
-font-family:'DeliciousRoman', Arial, sans-serif;
-font-weight:400;
+  color:#6B3C6A;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
 }
 
 a {
-color:#93278F;
+  color: #9f5a7f;
+  text-decoration: none;
 }
 
 p.subtitle {
-font-family:'DeliciousRoman';
-color:#6B3C7F;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  color: #4F4F4F;
 }
 
 .request_listing span.head a,.user_listing span.head a,.body_listing span.head a {
@@ -281,7 +283,7 @@ background: initial;
 }
 
 .feed_link a,.act_link a,#header_right > a {
-  color:#6B3C6A;
+  color: #9f5a7f;
 }
 
 form input[type=submit] {
@@ -396,10 +398,10 @@ color:#93278F;
 }
 
 div.comment_in_request {
-background:image-url('stripes-70-light2.png');
-border-color:#5F5F5F;
-border-style:dotted;
-border-width:1px;
+  margin-left: 1em;
+  h2 {
+    color: #4F4F4F;
+  }
 }
 
 #request_form label,label.form_label {
@@ -574,6 +576,14 @@ background: none;
   border: none;
 }
 
+div.correspondence, div.comment_in_request {
+  padding-left: 0em;
+}
+
+.correspondence_text, .comment_in_request_text {
+  margin-left: 0em;
+}
+
 div.outgoing.correspondence {
   background: white;
   border-color: #ccc;
@@ -735,7 +745,6 @@ div.correspondence p.preview_subject strong {
 }
 
 div.correspondence, div.outgoing.correspondence {
-  margin-top: 5%;
   padding-right: 0px;
   color: #4F4F4F;
   width: 98%;
@@ -748,8 +757,6 @@ div.correspondence p.preview_subject {
 div.correspondence h2 {
   text-align: left;
   font-size: 1em;
-  padding-left: 0.9em;
-  padding-right: 0.9em;
 }
 
 div.correspondence time {
@@ -1132,21 +1139,22 @@ a.link_button_green {
 
 
 
-#follow_box h2 {
-  background-color: #4A9D65;
-  text-align: center;
-  padding: 0.5em 0em;
-  color: white;
-  font-size: 1.5em;
-  border-radius: 3px;
+#follow_box {
+  color: #8e8d8d;
+  p {
+    font-weight: 600;
+  }
 }
+
 
 #follow_box .feed_link {
   text-align: inherit;
+  margin: 0.4em 0;
 }
 
 div#after_actions {
   width: 99%;
+  margin-bottom: 0em;
 }
 
 
@@ -1252,20 +1260,14 @@ div#after_actions strong {
 }
 
 .act_link {
-  width: 85%;
+  width: 100%;
   color: #545255;
-  margin-bottom: 7%;
-  margin-top: 4%;
   margin-top: 1em;
   margin-bottom: 0%;
 }
 
 .act-title, .act_link a {
-  padding: 0.7em 0.7em;
-  width: 92%;
   font-family: 'Open Sans', sans-serif;
-  font-weight: 600;
-  border-radius: 3px;
   margin: 0px;
   margin-top: 1em;
 }
@@ -1329,6 +1331,14 @@ div#after_actions strong {
 
 .login {
   float: right;
+}
+
+div#anyone_actions, #owner_actions, #public_body_actions {
+  margin-bottom: 1.5em;
+}
+
+.request_short_listing {
+  line-height: 1.5em;
 }
 
 //= require 'responsive/custom';
