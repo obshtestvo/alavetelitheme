@@ -259,7 +259,6 @@ h3 {
 
 a {
   color: #9f5a7f;
-  text-decoration: none;
 }
 
 p.subtitle {
@@ -298,7 +297,7 @@ form input[type=submit] {
   font-weight: 600;
   font-family: 'Open Sans', sans-serif;
   font-size: 1.2em;
-  border-radius: 5px;
+  border-radius: 3px;
   background-color: #4A9D65;
 }
 
@@ -321,7 +320,7 @@ input#reedit_button, input#submit_button {
 }
 .note-box {
   border: 1px solid;
-  border-radius: 5px;
+  border-radius: 3px;
   margin-top: 14%;
   margin-left: 9%;
   margin-right: 9%;
@@ -361,7 +360,7 @@ label.form_label {
   height: 23em;
   border-color: #ccc;
   margin-top: 1.7%;
-  border-radius: 5px;
+  border-radius: 3px;
   border-width: 1px;
   font-family: 'Open Sans',sans-serif;
   font-size: 1.1em;
@@ -378,7 +377,7 @@ span#to_public_body .authority-text, #typeahead_search {
   color: #969091;
   font-weight: bold;
   border-width: 1px;
-  border-radius: 6px;
+  border-radius: 3px;
   width: 60%;
 }
 
@@ -506,7 +505,7 @@ p#left.form_note {
 
 #request_advice ul {
   border: 1px solid #ccc;
-  border-radius: 6px;
+  border-radius: 3px;
   list-style: none;
   padding: 5%;
   width: 89%;
@@ -598,6 +597,9 @@ div.preview-request {
 }
 #left_column {
   width: 70%;
+  a {
+    text-decoration: none;
+  }
 }
 
 #frontpage_splash {
@@ -691,8 +693,8 @@ text-align:left;
 background-color:#FFF;
 z-index:999;
 opacity:0.9px;
-border-radius:6px;
--moz-border-radius:6px;
+border-radius: 3px;
+-moz-border-radius: 3px;
 border:1px solid #93278F;
 display:none;
 padding:5px;
@@ -826,7 +828,7 @@ background:image-url('quote-marks.png') no-repeat;
       display: block;
       width: 0.9em;
       height: 0.15em;
-      border-radius: 5px;
+      border-radius: 3px;
       background: #d1233e;
 
       @include rotate(51deg);
@@ -970,7 +972,7 @@ background:image-url('quote-marks.png') no-repeat;
     width: 175px;
     list-style-type: none;
     border: solid 1px #a8a8a8;
-    border-radius: 5px;
+    border-radius: 3px;
     background: #fff;
 
     li {
@@ -1112,11 +1114,13 @@ form input[type=submit], a.link_button_green, a.link_button_green_large {
   background-image: none;
   background-color: #4A9D65;
   border: none;
+  padding: 0.6em;
+  border-radius: 3px;
+
 }
 a.link_button_green {
   padding: 0.5em;
-//  margin-left: 2em;
-  border-radius: 5px;
+  border-radius: 3px;
 }
 
 .form_item_note, .form_note {
@@ -1250,7 +1254,7 @@ div#after_actions strong {
   padding-top: 0.8em;
   padding-bottom: 0.8em;
   margin-bottom: 0.8em;
-  border-radius: 5px;
+  border-radius: 3px;
 }
 
 .act-title {
@@ -1278,7 +1282,7 @@ div#after_actions strong {
 
 #notice, .describe_state_form, #other_recipients, #error, #hidden_request {
   display: inline-block;
-  width: 98%;
+  width: 92%;
 }
 
 #notice {
