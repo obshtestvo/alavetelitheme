@@ -212,8 +212,8 @@ color:#92B3FF;
 }
 
 h1,h2,h3 {
- font-family:Trebuchet, Trebuchet MS, Helvetica, sans-serif;
- color:#555;
+  font-family: 'Open Sans', sans-serif;
+  color:#555;
 }
 
 h1 {
@@ -223,13 +223,13 @@ h1 {
 }
 
 h2 {
-font-size:1.4em;
+font-size: 1.3em;
 }
 
 
 h2,dt {
 color:#93278F;
-font-family:'DeliciousBold', Arial, sans-serif;
+//font-family:'DeliciousBold', Arial, sans-serif;
 font-weight:400;
 }
 
@@ -601,16 +601,17 @@ color:#6B3C6A;
 }
 
 #frontpage_splash h2 {
-font-size: 1.3em;
-font-weight:400;
-color:#6B3C6A;
-font-family:'DeliciousRoman', Arial, sans-serif;
+  font-size: 1.3em;
+  font-weight:400;
+  color:#6B3C6A;
+  font-family: 'Open Sans', sans-serif;
+
 }
 
 #frontpage_splash h2 strong {
 font-size: 1.3em;
 color:#93278F;
-font-family:'DeliciousBold', Arial, sans-serif;
+font-family: 'Open Sans', sans-serif;
 }
 
 #frontpage_splash h2 span {
@@ -1102,6 +1103,10 @@ a.link_button_green {
   border-radius: 3px;
 }
 
+#follow_box .feed_link {
+  text-align: inherit;
+}
+
 div#after_actions {
   width: 99%;
 }
@@ -1114,34 +1119,18 @@ div#after_actions {
   width: 99%;
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
-  border: 1px solid #f2e5ec;
-  border-top-right-radius: 6px;
-  border-top-left-radius: 6px;
-    li {
-      padding-left: 4px;
-    }
 }
 
 div#after_actions strong {
-  display: block;
-  background-color: #f2e5ec;
-  width: 98%;
-  padding: 0.2em;
-  color: #5D5D5D;
+  color: #8e8d8d;
 }
 
 #after_actions h2 {
-  width: 91%;
   margin: 0px;
-  background-color: #9f5a7f;
-  color: white;
-  padding: 0.7em 0.73em;
-  border: #9f5a7f 1px solid;
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
+  color: #93278F;
   font-family: 'Open Sans', sans-serif;
-  font-weight: 600;
-  font-size: 1em;
+  font-size: 1.3em;
+  margin-bottom: 1em;
 
 }
 #after_actions ul {
@@ -1149,9 +1138,12 @@ div#after_actions strong {
   font-color: #5D5D5D;
   font-family: 'Open Sans', sans-serif;
   padding: 0px;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 }
 
 #after_actions a {
+  line-height: 1.5em;
   list-style-type: none;
   text-decoration: underline;
   color: #9f5a7f;
@@ -1240,7 +1232,7 @@ div#after_actions strong {
   margin-top: 1em;
 }
 .act_link a img {
-  width: 21%;
+  width: 13%;
   margin-bottom: 0.5em;
 }
 
