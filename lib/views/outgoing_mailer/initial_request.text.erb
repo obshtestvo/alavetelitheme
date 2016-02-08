@@ -1,5 +1,7 @@
 <%= raw @outgoing_message.body.strip %>
 
+Адрес: <%= @info_request.address %>
+
 -------------------------------------------------------------------
 
 <%= _('This is an FOI request done via the {{site_name}} website. This footer has been overriden by the sample Alaveteli theme.', :site_name => site_name) %>
